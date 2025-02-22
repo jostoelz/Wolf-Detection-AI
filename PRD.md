@@ -38,3 +38,5 @@ In diesem Projekt entwickle ich eine Künstliche Intelligenz, die Wölfe aus der
 * Eine andere Schwierigkeit des Themas könnte das Training der KI sein, das einen leistungsstarken Computer bzw. GPU benötigt.
 * Eine weitere Problematik ist die Speicherung der mehreren Tausend / Zehntausend / Hundertausend Bildern.
 * Ebenso müsste ich mir die Frage stellen, wenn ich ein stationäres Gerät zur Aufnahme verwenden würde, wie ich die Wolfs-Bilder mit nicht Wolfs-Bilder filtere. Ich sollte nur die Wolfs-Bilder speichern, um nicht mehrheitlich Fehl-Bilder zu erhalten. 
+
+# Materialliste
