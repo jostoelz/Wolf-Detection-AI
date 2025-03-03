@@ -7,24 +7,31 @@ Im ersten Arbeitsschritt gilt es, die Wolfs-Aufnahmen zu sammeln. Dafür muss ic
 #### Auswahl Zoo
 Bereits angefragte Zoos sind der Tierpark Dählhölzli Bern, der Tierpark Wilhelma in Stuttgart, der Wildnispark Zürich Langenberg, der Wildpark Bruderhaus in Zürich, der Alpenzoo in Innsbruck und der Alternativer Wolf- und Bärenpark im Schwarzwald. Als Backup wären der Parc Animalier de Sainte-Croix in Frankreich, der Juraparc Vallorbe und der Zoo la Garenne in Waadt Möglichkeiten. 
 
-Letzte Aktualisierung am 24.02.25: Der Tierpark Dählhölzli in Bern hat mir angeboten, dass ein Tierpfleger des Tierparkes mit seiner Drohne die Aufnahmen für mich machen würde. Zuletzt habe ich ihnen dafür eine Beschreibung zugesendet, was ich genau bräuchte. 
+Letzte Aktualisierung am 03.03.25: Der Tierpark Dählhölzli in Bern hat mir angeboten, dass ein Tierpfleger des Tierparkes mit seiner Drohne für 30 min. Aufnahmen für mich machen würde. Zuletzt habe ich ihnen dafür eine Beschreibung zugesendet, was ich genau bräuchte. 
 #### Aufnahme des Bildmaterials
 Prinzipiell gibt es zwei Ansätze für die Aufnahme des Bildmaterials. 
 Eine Möglichkeit wäre, eine Drohne in größerer Höhe über die Wölfe fliegen zu lassen. Alternativ könnte eine stationäre Kamera für einen begrenzten Zeitraum an einem erhöhten Punkt installiert werden, um die Wölfe von oben zu filmen. Für beide Optionen brauche ich ungefähr 1,5 Stunden Videomaterial, in dem der Wolf aus der Vogelperspektive sichtbar ist. Es ist egal, auf wie viele Teilvideos die Aufnahmen verteilt sind – wichtig ist nur, dass die Drohne / der Wolf bei einem stationären Gerät nicht an Ort und Stelle bleibt, sondern in Bewegung ist, um verschiedene Situationen und Blickwinkel einzufangen. Die Höhe der Aufnahmen überlasse ich den Gegebenheiten vor Ort, denn oftmals ist das Wolfs-Gehege stark bewaldet, was z.B. einen Drohnenflug stark eingrenzt. Der Wolf sollte auf den Aufnahmen einfach gut erkennbar sein. 
 #### Beschriftung des Bildmaterials
 Um das Bildmaterial zu beschriften, kann das Bildmaterial z.B. per API automatisiert in Chat GPT hereingeladen werden. Danach kann ein Prompt für die Position des Wolfes gestellt werden und anschliessend die Rückgabe in einem grossen Datenset dem Bild zugeordnet werden. Jedoch wird dieses Verfahren nur mit 80 % des Bildmaterials durchgeführt. Die anderen 20 % des Bildmaterials werden später für das Testen der KI benötigt. 
-Alternativen zu Chat GPT sind <a href="https://labelbox.com/ ">Labelbox</a>, <a href="https://roboflow.com/annotate">Roboflow</a>, Labellmg und <a href="https://www.makesense.ai/ ">Makesense.Ai</a>
+Alternativen zu Chat GPT sind <a href="https://labelbox.com/ ">Labelbox</a>, <a href="https://roboflow.com/annotate">Roboflow</a>, Labellmg, <a href="https://labelstud.io/">Labelstudio</a> und <a href="https://www.makesense.ai/ ">Makesense.Ai</a>
 ### Installierung eines YOLO-Models
+Das folgende <a href="https://www.youtube.com/watch?v=_WKS4E9SmkA">Video</a> zeigt, dass das YOLO11n Modell die beste Variante für Echtzeit Objekterkennung auf dem Raspberry Pi 5 ist (das dazu verwendete Datenset hat 750 Bildern und wurde im Format NCNN exportiert). <br>
+Siehe Links: https://www.youtube.com/watch?v=LNwODJXcvt4 <br>
+https://www.ultralytics.com/de/blog/training-custom-datasets-with-ultralytics-yolov8-in-google-colab <br>
+https://www.youtube.com/watch?v=r0RspiLG260 <br>
+https://colab.research.google.com/github/ultralytics/ultralytics/blob/main/examples/tutorial.ipynb#scrollTo=4JnkELT0cIJg
 ### Training des YOLO-Models mit eigenem Datenset
 ### Überprüfung der Erfolgsquote der KI
 Um die Erfolgsquote der KI zu ermitteln, werden die restlichen 20 % des Bildmaterials in die KI geladen. <br>
 Siehe Link: https://labelyourdata.com/articles/object-detection-metrics
 ### Installierung der KI auf einem Raspberry Pi
-Die KI kann nun auf den Raspberry Pi herüberkopiert (z.B. im Dateiformat TensorFlow Lite) werden. Dazu muss nur der Raspberry Pi über SSH an den Computer verbunden sein. Damit die Erkennung auch problemlos mit der Raspberry Pi Kamera funktioniert, müssen die Auflösung und das Bildformat an das Bildmaterial angepasst werden, das für das Training der KI verwendet wurde. Deshalb muss man die Bilder der Kamera nach Erhalt etwas anpassen, bevor man sie in die KI gibt. Ebenso darf z.B. nur alle halbe Sekunde ein Bild an die KI weitergegeben werden, sodass verhindert wird, dass der Raspberry Pi nicht überbeansprucht wird. 
+Die KI kann nun auf den Raspberry Pi herüberkopiert (z.B. im Dateiformat TensorFlow Lite) werden. Dazu muss nur der Raspberry Pi über SSH an den Computer verbunden sein. Dann kann die KI auf den Raspberry Pi herüberkopiert werden. Damit die Erkennung auch problemlos mit der Raspberry Pi Kamera funktioniert, müssen die Auflösung und das Bildformat an das Bildmaterial angepasst werden, das für das Training der KI verwendet wurde. Deshalb muss man die Bilder der Kamera nach Erhalt etwas anpassen, bevor man sie in die KI gibt. Ebenso darf z.B. nur alle halbe Sekunde ein Bild an die KI weitergegeben werden, sodass verhindert wird, dass der Raspberry Pi nicht überbeansprucht wird. 
 #### Voraussetzungen
 Um ein neuronales Netzwerk auf einem Raspberry Pi laufen lassen zu können, benötige ich einen Raspberry Pi AI Beschleuniger und einen Kühler. Ebenso muss der Raspberry Pi mit einer Kamera ausgestattet werden. 
 ## Optionale Features
 * Da ich die Wolfs-Bilder nicht mit einer Wärmebildkamera (Stand: 24.02.25) aufnehmen kann, aber den Wolf auch in Dunkelheit erkennen möchte, könnte ich ein Wärmebild-Filter über das Bildmaterial legen. Anschliessend könnte ich die KI neu trainieren und testen, wie gut das System nun auch Wölfe in der Nacht erkennen kann.
+* Ein anderes optionale Feature wäre das Ausprobieren verschiedener YOLO-Modelle und Trainings-Parameter, um die bestmöglichste KI auf einem Raspberry Pi herauszufinden. Dabei muss zwischen Genauigkeit und Geschwindigkeit abgewogen werden.
+* Eine andere Erweiterung ist, dass die Koordinaten des Wolfes auf dem Bild ausgegeben werden können.
 # Skizze
 # Technische Details
 
@@ -73,6 +80,10 @@ Um ein neuronales Netzwerk auf einem Raspberry Pi laufen lassen zu können, ben�
       <td>Raspberry Pi Flachbandkabel für Kamera:<br>
       https://www.reichelt.com/ch/de/shop/produkt/raspberry_pi_-_kabel_flachbandkabel_fuer_kamera_30_cm-360119</td>
       <td>2.18 Fr.</td>
+    </tr>
+        <tr>
+      <td>microSD-Karte
+      <td>ùnklar wie viel GB benötigt</td>
     </tr>
   </tbody>
 </table>
