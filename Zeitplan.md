@@ -9,15 +9,15 @@
   <tbody>
     <tr>
       <td>Projektbeschreibung</td>
-      <td>24.02.25</td>
+      <td>10.03.25</td>
+    </tr>
+    <tr>
+      <td>Erhalt Videomaterial Tierpark Dählhözli</td>
+      <td>22.03.25</td>
     </tr>
     <tr>
       <td>Bestellung Materialien</td>
-      <td>03.03.25</td>
-    </tr>
-    <tr>
-      <td>Dokumentation finalisieren</td>
-      <td>11.02.25</td>
+      <td>31.03.25</td>
     </tr>
     <tr>
       <td>Reserve oder optionale Features einbauen</td>
