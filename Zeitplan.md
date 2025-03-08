@@ -8,7 +8,7 @@
   </thead>
   <tbody>
     <tr>
-      <td>Projektbeschreibung</td>
+      <td>PRD & Zeitplan</td>
       <td>10.03.25</td>
     </tr>
     <tr>
