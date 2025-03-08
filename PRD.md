@@ -62,28 +62,28 @@ Um ein neuronales Netzwerk auf einem Raspberry Pi laufen lassen zu können, ben�
     </tr>
     <tr>
       <td>Raspberry Pi Kamera:<br>
-      https://www.reichelt.com/ch/de/shop/produkt/raspberry_pi_-_kamera_1_6mp_shutter_c-_cs-fassung-345205</td>
-      <td>52.33 Fr.</td>
-    </tr>
-   <tr>
-   <td>Raspberry Pi Kamera-Objektiv:<br>
-        Option 1 (Weitwinkel): <a href="https://www.reichelt.com/ch/de/shop/produkt/raspberry_pi_-_objektiv_fuer_cs-fassung_6mm_weitwinkel-276922">6mm Weitwinkel</a><br>
-        Option 2 (Teleobjektiv): <a href="https://www.reichelt.com/ch/de/shop/produkt/raspberry_pi_-_objektiv_fuer_c-fassung_16mm_teleobjektiv-276921">16mm Teleobjektiv</a>
-    </td>
-    <td>Option 1:<br>
-        24.95 Fr.<br>
-        Option 2:<br>
-        52.30 Fr.
-    </td>
+      https://www.reichelt.com/ch/de/shop/produkt/raspberry_pi_-_kamera_12mp_120_v3-339260</td>
+      <td>34 Fr.</td>
     </tr>
     <tr>
       <td>Raspberry Pi Flachbandkabel für Kamera:<br>
-      https://www.reichelt.com/ch/de/shop/produkt/raspberry_pi_-_kabel_flachbandkabel_fuer_kamera_30_cm-360119</td>
-      <td>2.18 Fr.</td>
+     https://www.reichelt.com/ch/de/shop/produkt/raspberry_pi_-_flachbandkabel_fuer_kamera_20_cm-360118</td>
+      <td>1.20 Fr.</td>
     </tr>
         <tr>
-      <td>microSD-Karte
-      <td>ùnklar wie viel GB benötigt</td>
+      <td>microSD-Karte: <br>
+        https://www.digitec.ch/de/s1/product/sandisk-extreme-microsdxc-sd-s-microsdxc-256-gb-u3-uhs-i-speicherkarte-20932251?supplier=406802&utm_source=google&utm_medium=cpc&utm_campaign=PROD_CH_PMAX_M6_C4&campaignid=21028347765&adgroupid=&adid=&dgCidg=Cj0KCQiA8q--BhDiARIsAP9tKI3RNmOl8y-l3OyqPT_JXIeHUGtxVwzwmUXusCfflVr4PLTbQIVooJAaAhv_EALw_wcB&gad_source=1&gclid=Cj0KCQiA8q--BhDiARIsAP9tKI3RNmOl8y-l3OyqPT_JXIeHUGtxVwzwmUXusCfflVr4PLTbQIVooJAaAhv_EALw_wcB&gclsrc=aw.ds </td>
+      <td>28.60 Fr.</td>
+    </tr>
+    </tr>
+        <tr>
+      <td>Postkosten Paket Tierpark Dählhölzli
+      <td>10.50 Fr.</td>
+    </tr>
+    <tr>
+      <td>Raspberry Pi 5:<br>
+      https://www.digitec.ch/de/s1/product/raspberry-pi-5-8gb-entwicklungsboard-kit-38955607</td>
+      <td>88.90 Fr.</td>
     </tr>
   </tbody>
 </table>
