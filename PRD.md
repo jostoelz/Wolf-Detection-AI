@@ -32,8 +32,6 @@ Um ein neuronales Netzwerk auf einem Raspberry Pi laufen lassen zu können, ben�
 * Da ich die Wolfs-Bilder nicht mit einer Wärmebildkamera (Stand: 24.02.25) aufnehmen kann, aber den Wolf auch in Dunkelheit erkennen möchte, könnte ich ein Wärmebild-Filter über das Bildmaterial legen. Anschliessend könnte ich die KI neu trainieren und testen, wie gut das System nun auch Wölfe in der Nacht erkennen kann.
 * Ein anderes optionale Feature wäre das Ausprobieren verschiedener YOLO-Modelle und Trainings-Parameter, um die bestmöglichste KI auf einem Raspberry Pi herauszufinden. Dabei muss zwischen Genauigkeit und Geschwindigkeit abgewogen werden.
 * Eine andere Erweiterung ist, dass die Koordinaten des Wolfes auf dem Bild ausgegeben werden können.
-# Skizze
-# Technische Details
 
 # Probleme
 * Ein Problem des Projektes könnte die Aufnahme der Wolfs-Bilder sein. Ich bräuchte die Erlaubnis eines Zoos, eine Drohne über den Wolfen fliegen zu lassen oder ein stationäres Gerät während mehrerer Wochen aufbauen zu dürfen.
@@ -77,13 +75,17 @@ Um ein neuronales Netzwerk auf einem Raspberry Pi laufen lassen zu können, ben�
     </tr>
     </tr>
         <tr>
-      <td>Postkosten Paket Tierpark Dählhölzli
+      <td>Paketkosten Tierpark Dählhölzli
       <td>10.50 Fr.</td>
     </tr>
     <tr>
       <td>Raspberry Pi 5:<br>
       https://www.digitec.ch/de/s1/product/raspberry-pi-5-8gb-entwicklungsboard-kit-38955607</td>
       <td>88.90 Fr.</td>
+    </tr>
+    <tr>
+      <td>Stick?</td>
+      <td></td>
     </tr>
   </tbody>
 </table>
