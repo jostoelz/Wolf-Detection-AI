@@ -16,8 +16,40 @@
       <td>22.03.25</td>
     </tr>
     <tr>
+      <td>Installierung YOLO-Modell</td>
+      <td>22.03.25</td>
+    </tr>
+    <tr>
       <td>Bestellung Materialien</td>
       <td>31.03.25</td>
+    </tr>
+    <tr>
+      <td>Training einer KI mit einem Testdatensatz durchführen</td>
+      <td>31.03.25</td>
+    </tr>
+    <tr>
+      <td>Extrahierung der Bilder aus Videomaterial</td>
+      <td>28.04.25</td>
+    </tr>
+    <tr>
+      <td>Beschriftung Bildmaterial</td>
+      <td>28.04.25</td>
+    </tr>
+    <tr>
+      <td>Training der KI mit dem Bildmaterial</td>
+      <td>12.05.25</td>
+    </tr>
+    <tr>
+      <td>Überprüfung der Erfolgsquote der KI</td>
+      <td>26.05.25</td>
+    </tr>
+    <tr>
+      <td>Installierung Raspberry Pi Kamera + Beschleuniger</td>
+      <td>16.06.25</td>
+    </tr>
+    <tr>
+      <td>Installierung der KI auf dem Raspberry Pi</td>
+      <td>30.06.25</td>
     </tr>
     <tr>
       <td>Reserve oder optionale Features einbauen</td>
