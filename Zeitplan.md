@@ -44,12 +44,12 @@
       <td>26.05.25</td>
     </tr>
     <tr>
-      <td>Installierung Raspberry Pi Kamera + Beschleuniger</td>
-      <td>16.06.25</td>
+      <td>Installierung Raspberry Pi Kamera + Beschleuniger (inkl. auf Drohne)</td>
+      <td>23.06.25</td>
     </tr>
     <tr>
       <td>Installierung der KI auf dem Raspberry Pi</td>
-      <td>30.06.25</td>
+      <td>08.09.25</td>
     </tr>
     <tr>
       <td>Reserve oder optionale Features einbauen</td>
