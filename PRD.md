@@ -14,6 +14,8 @@ Eine Möglichkeit wäre, eine Drohne in größerer Höhe über die Wölfe fliege
 #### Beschriftung des Bildmaterials
 Um das Bildmaterial zu beschriften, kann das Bildmaterial z.B. per API automatisiert in Chat GPT hereingeladen werden. Danach kann ein Prompt für die Position des Wolfes gestellt werden und anschliessend die Rückgabe in einem grossen Datenset dem Bild zugeordnet werden. Jedoch wird dieses Verfahren nur mit 80 % des Bildmaterials durchgeführt. Die anderen 20 % des Bildmaterials werden später für das Testen der KI benötigt. 
 Alternativen zu Chat GPT sind <a href="https://labelbox.com/ ">Labelbox</a>, <a href="https://roboflow.com/annotate">Roboflow</a>, Labellmg, <a href="https://labelstud.io/">Labelstudio</a> und <a href="https://www.makesense.ai/ ">Makesense.Ai</a>
+<br>
+Das folgende Video zeigt eine automatisierte Beschriftung von Bildmaterial mithilfe von Roboflow: https://www.youtube.com/watch?v=SDV6Gz0suAk 
 ### Installierung eines YOLO-Models
 Das folgende <a href="https://www.youtube.com/watch?v=_WKS4E9SmkA">Video</a> zeigt, dass das YOLO11n Modell die beste Variante für Echtzeit Objekterkennung auf dem Raspberry Pi 5 ist (das dazu verwendete Datenset hat 750 Bildern und wurde im Format NCNN exportiert). <br>
 Siehe Links: https://www.youtube.com/watch?v=LNwODJXcvt4 <br>
