@@ -22,6 +22,7 @@ Siehe Links: https://www.youtube.com/watch?v=LNwODJXcvt4 <br>
 https://www.ultralytics.com/de/blog/training-custom-datasets-with-ultralytics-yolov8-in-google-colab <br>
 https://www.youtube.com/watch?v=r0RspiLG260 <br>
 https://colab.research.google.com/github/ultralytics/ultralytics/blob/main/examples/tutorial.ipynb#scrollTo=4JnkELT0cIJg
+https://colab.research.google.com/github/roboflow/notebooks/blob/main/notebooks/train-yolov8-object-detection-on-custom-dataset.ipynb
 ### Training des YOLO-Models mit eigenem Datenset
 ### Überprüfung der Erfolgsquote der KI
 Um die Erfolgsquote der KI zu ermitteln, werden die restlichen 20 % des Bildmaterials in die KI geladen. <br>
