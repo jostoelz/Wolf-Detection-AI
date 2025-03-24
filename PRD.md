@@ -24,6 +24,7 @@ https://www.youtube.com/watch?v=r0RspiLG260 <br>
 https://colab.research.google.com/github/ultralytics/ultralytics/blob/main/examples/tutorial.ipynb#scrollTo=4JnkELT0cIJg
 https://colab.research.google.com/github/roboflow/notebooks/blob/main/notebooks/train-yolov8-object-detection-on-custom-dataset.ipynb
 ### Training des YOLO-Models mit eigenem Datenset
+Ich habe das Training eines YOLO-Modells mit einem Test-Datensatz durchgeführt. Das Vorgehen wurde in "Train_Google_Colab" dokumentiert. Der Test-Datensatz enthielt 10 Wolfs-Bilder aus der Vogelperspektive. Deshalb erreichte das Modell auch nur eine Presicion von 0.42 und eine mAP50 von 0.74. Das YOLO v8-Modell wurden mit 50 Epochen, mit einer Bildergrösse von 640x640 und einer Batch-Grösse von 16 trainiert. Als ich das Modell mit drei Test-Bilder ausprobiert habe, hat das Modell keine Bounding Boxen auf den Bildern markiert. 
 ### Überprüfung der Erfolgsquote der KI
 Um die Erfolgsquote der KI zu ermitteln, werden die restlichen 20 % des Bildmaterials in die KI geladen. <br>
 Siehe Link: https://labelyourdata.com/articles/object-detection-metrics
