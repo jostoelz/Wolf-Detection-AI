@@ -26,7 +26,7 @@ https://colab.research.google.com/github/ultralytics/ultralytics/blob/main/examp
 https://colab.research.google.com/github/roboflow/notebooks/blob/main/notebooks/train-yolov8-object-detection-on-custom-dataset.ipynb
 ### Training des YOLO-Models mit eigenem Datenset
 #### Durchführung mit einem Test-Datensatz
-Ich habe das Training eines YOLO-Modells in Google Colab mit einem Test-Datensatz durchgeführt. Das Vorgehen wurde in "Train_Google_Colab" dokumentiert. Der Test-Datensatz enthielt 10 Wolfs-Bilder aus der Vogelperspektive. Dies ist der Grund, warum das Modell auch nur eine Precision von 0.42 und eine mAP50 von 0.74 erreichte. Das YOLO v8-Modell wurden mit 50 Epochen, mit einer Bildergrösse von 640x640 und einer Batch-Grösse von 16 trainiert. Als ich das Modell mit drei Test-Bilder ausprobiert habe, hat das Modell keine Bounding Boxen auf den Bildern markiert. 
+Ich habe das Training eines YOLO-Modells in Google Colab mit einem Test-Datensatz durchgeführt. Das Vorgehen wurde in "Train_Google_Colab" dokumentiert. Der Test-Datensatz enthielt 10 Wolfs-Bilder aus der Vogelperspektive. Dies ist der Grund, warum das Modell auch nur eine Precision von 0.42 und eine mAP50 von 0.74 erreichte. Das YOLO v8-Modell wurden mit 50 Epochen, mit einer Bildergrösse von 640x640 und einer Batch-Grösse von 16 trainiert. Als ich das Modell mit drei Test-Bilder ausprobiert habe, hat das Modell keine Bounding Boxen auf den Bildern markiert. Die kostenlose Verwendung der Funktionen ist jedoch begrenzt.
 ### Überprüfung der Erfolgsquote der KI
 Um die Erfolgsquote der KI zu ermitteln, werden die restlichen 20 % des Bildmaterials in die KI geladen. <br>
 Siehe Link: https://labelyourdata.com/articles/object-detection-metrics
