@@ -1,6 +1,6 @@
 # Training eines YOLO-Modells in Google Colab mit eigenem Datenset
 
-Zuest habe ich ein neues Notebook in Google Colab erstellt. Dann habe ich den folgenden Code ausgeführt, um das YOLO-Modell von ultralytics zu importieren. 
+Zuest habe ich ein neues Notebook in Google Colab erstellt. Davor muss aber unter "Laufzeit" und "Laufzeittyp" eine GPU ausgewählt werden. Dann habe ich den folgenden Code ausgeführt, um das YOLO-Modell von ultralytics zu importieren. 
 ``` 
 !pip install ultralytics  
 from ultralytics import YOLO
