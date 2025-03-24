@@ -15,7 +15,8 @@ Eine Möglichkeit wäre, eine Drohne in größerer Höhe über die Wölfe fliege
 Um das Bildmaterial zu beschriften, kann das Bildmaterial z.B. per API automatisiert in Chat GPT hereingeladen werden. Danach kann ein Prompt für die Position des Wolfes gestellt werden und anschliessend die Rückgabe in einem grossen Datenset dem Bild zugeordnet werden. Jedoch wird dieses Verfahren nur mit 80 % des Bildmaterials durchgeführt. Die anderen 20 % des Bildmaterials werden später für das Testen der KI benötigt. 
 Alternativen zu Chat GPT sind <a href="https://labelbox.com/ ">Labelbox</a>, <a href="https://roboflow.com/annotate">Roboflow</a>, Labellmg, <a href="https://labelstud.io/">Labelstudio</a> und <a href="https://www.makesense.ai/ ">Makesense.Ai</a>
 <br>
-Das folgende Video zeigt eine automatisierte Beschriftung von Bildmaterial mithilfe von Roboflow: https://www.youtube.com/watch?v=SDV6Gz0suAk 
+##### Beschriftung Test-Datensatz
+Als ich ein Test-Datensatz erstellt habe, bin ich dem folgenden <a href="https://www.youtube.com/watch?v=SDV6Gz0suAk">Video</a> gefolgt, das eine automatisierte Beschriftung des Bildmaterials mithilfe von Roboflow zeigt. Das Datenset kann direkt in einer gewünschten Form heruntergeladen werden. Es können verschiedene Klassen festgelegt werden und bei falschen / ungenauen Beschriftungen selbständig angepasst werden. Ebenso kann die Grösse des Train, Valid und Test Set angepasst werden. Aber auch die Bildgrösse ist frei wählbar und Augmentation kann hinzugefügt werden.
 ### Installierung eines YOLO-Models
 Das folgende <a href="https://www.youtube.com/watch?v=_WKS4E9SmkA">Video</a> zeigt, dass das YOLO11n Modell die beste Variante für Echtzeit Objekterkennung auf dem Raspberry Pi 5 ist (das dazu verwendete Datenset hat 750 Bildern und wurde im Format NCNN exportiert). <br>
 Siehe Links: https://www.youtube.com/watch?v=LNwODJXcvt4 <br>
@@ -24,7 +25,8 @@ https://www.youtube.com/watch?v=r0RspiLG260 <br>
 https://colab.research.google.com/github/ultralytics/ultralytics/blob/main/examples/tutorial.ipynb#scrollTo=4JnkELT0cIJg
 https://colab.research.google.com/github/roboflow/notebooks/blob/main/notebooks/train-yolov8-object-detection-on-custom-dataset.ipynb
 ### Training des YOLO-Models mit eigenem Datenset
-Ich habe das Training eines YOLO-Modells mit einem Test-Datensatz durchgeführt. Das Vorgehen wurde in "Train_Google_Colab" dokumentiert. Der Test-Datensatz enthielt 10 Wolfs-Bilder aus der Vogelperspektive. Deshalb erreichte das Modell auch nur eine Presicion von 0.42 und eine mAP50 von 0.74. Das YOLO v8-Modell wurden mit 50 Epochen, mit einer Bildergrösse von 640x640 und einer Batch-Grösse von 16 trainiert. Als ich das Modell mit drei Test-Bilder ausprobiert habe, hat das Modell keine Bounding Boxen auf den Bildern markiert. 
+#### Durchführung mit einem Test-Datensatz
+Ich habe das Training eines YOLO-Modells in Google Colab mit einem Test-Datensatz durchgeführt. Das Vorgehen wurde in "Train_Google_Colab" dokumentiert. Der Test-Datensatz enthielt 10 Wolfs-Bilder aus der Vogelperspektive. Dies ist der Grund, warum das Modell auch nur eine Precision von 0.42 und eine mAP50 von 0.74 erreichte. Das YOLO v8-Modell wurden mit 50 Epochen, mit einer Bildergrösse von 640x640 und einer Batch-Grösse von 16 trainiert. Als ich das Modell mit drei Test-Bilder ausprobiert habe, hat das Modell keine Bounding Boxen auf den Bildern markiert. 
 ### Überprüfung der Erfolgsquote der KI
 Um die Erfolgsquote der KI zu ermitteln, werden die restlichen 20 % des Bildmaterials in die KI geladen. <br>
 Siehe Link: https://labelyourdata.com/articles/object-detection-metrics
