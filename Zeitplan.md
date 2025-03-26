@@ -12,20 +12,20 @@
       <td>10.03.25</td>
     </tr>
     <tr>
-      <td>Erhalt Videomaterial Tierpark Dählhözli</td>
-      <td>22.03.25</td>
-    </tr>
-    <tr>
       <td>Installierung YOLO-Modell</td>
       <td>22.03.25</td>
     </tr>
     <tr>
-      <td>Bestellung Materialien</td>
+      <td>Training einer KI mit einem Testdatensatz durchführen</td>
       <td>31.03.25</td>
     </tr>
     <tr>
-      <td>Training einer KI mit einem Testdatensatz durchführen</td>
-      <td>31.03.25</td>
+      <td>Erhalt Videomaterial Tierpark Dählhözli</td>
+      <td>07.04.25</td>
+    </tr>
+    <tr>
+      <td>Aufnahme Videomaterial von Schafen</td>
+      <td>28.04.25</td>
     </tr>
     <tr>
       <td>Extrahierung der Bilder aus Videomaterial</td>
@@ -44,7 +44,11 @@
       <td>26.05.25</td>
     </tr>
     <tr>
-      <td>Installierung Raspberry Pi Kamera + Beschleuniger (inkl. auf Drohne)</td>
+      <td>Bestellung Materialien</td>
+      <td>26.05.25</td>
+    </tr>
+    <tr>
+      <td>Installierung Raspberry Pi Kamera + Beschleuniger (inkl. Montage auf Drohne)</td>
       <td>23.06.25</td>
     </tr>
     <tr>
