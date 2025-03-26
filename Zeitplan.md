@@ -65,3 +65,6 @@
     </tr>
   </tbody>
 </table>
+  
+# Priorisierung
+Unverzichtbar ist definitiv, dass ich eine KI mit meinem eigenen Datenset trainiere. Weggelassen hingegen könnte die Benutzung auf dem Raspberry Pi.
