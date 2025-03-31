@@ -44,6 +44,7 @@ Im Umfang dieses Projekts ist ebenfalls die Installation des Raspberry Pi AI-Bes
 * Ein anderes optionale Feature wäre das Ausprobieren verschiedener YOLO-Modelle und Trainings-Parameter, um die bestmöglichste KI auf einem Raspberry Pi herauszufinden. Dabei muss zwischen Genauigkeit und Geschwindigkeit abgewogen werden.
 * Eine andere Erweiterung ist, dass die Koordinaten des Wolfes auf dem Bild ausgegeben werden können.
 * Ebenso kann untersucht werden, ob die selbst erstellte KI besser performt als z.B. Chat-GPT API Anfragen
+* Ich könnte auch das externe YOLO-Modell ersetzen und meinen eigenen Code für die KI schreiben.
 
 # Probleme
 * Ein Problem des Projektes könnte die Aufnahme der Wolfs-Bilder sein. Ich bräuchte die Erlaubnis eines Zoos, eine Drohne über den Wolfen fliegen zu lassen oder ein stationäres Gerät während mehrerer Wochen aufbauen zu dürfen.
