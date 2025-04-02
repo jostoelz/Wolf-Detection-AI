@@ -43,7 +43,7 @@ Im Umfang dieses Projekts ist ebenfalls die Installation des Raspberry Pi AI-Bes
 * Da ich die Wolfs-Bilder nicht mit einer Wärmebildkamera (Stand: 24.02.25) aufnehmen kann, aber den Wolf auch in Dunkelheit erkennen möchte, könnte ich ein Wärmebild-Filter über das Bildmaterial legen. Anschliessend könnte ich die KI neu trainieren und testen, wie gut das System nun auch Wölfe in der Nacht erkennen kann.
 * Ein anderes optionale Feature wäre das Ausprobieren verschiedener YOLO-Modelle und Trainings-Parameter, um die bestmöglichste KI auf einem Raspberry Pi herauszufinden. Dabei muss zwischen Genauigkeit und Geschwindigkeit abgewogen werden.
 * Eine andere Erweiterung ist, dass die Koordinaten des Wolfes auf dem Bild ausgegeben werden können.
-* Ebenso kann untersucht werden, ob die selbst erstellte KI besser performt als z.B. Chat-GPT API Anfragen
+* Ebenso kann untersucht werden, ob die selbst erstellte KI besser performt als z.B. Chat-GPT API Anfragen oder andere open source object detection Modelle.
 * Ich könnte auch das externe YOLO-Modell ersetzen und meinen eigenen Code für die KI schreiben.
 
 # Probleme
