@@ -7,12 +7,13 @@ Im ersten Arbeitsschritt gilt es, die Wolfs-Aufnahmen zu sammeln. Dafür muss ic
 #### Auswahl Zoo
 Bereits angefragte Zoos sind der Tierpark Dählhölzli Bern, der Tierpark Wilhelma in Stuttgart, der Wildnispark Zürich Langenberg, der Wildpark Bruderhaus in Winterthur, der Tierpark Goldau, der Tierpark Lange Erlen in Basel, der Sikypark in Crémines, der Juraparc Vallorbe, der Alpenzoo in Innsbruck, der Wildpark Feldkirch und der Alternativer Wolf- und Bärenpark im Schwarzwald. Als Backup wären der Parc Animalier de Sainte-Croix in Frankreich und der Zoo la Garenne in Waadt Möglichkeiten. 
 
-Letzte Aktualisierung am 05.03.25: Der Tierpark Dählhölzli in Bern hat mir angeboten, dass ein Tierpfleger des Tierparkes mit seiner Drohne für 30 min. Aufnahmen für mich machen würde. Zuletzt habe ich ihnen dafür eine Beschreibung zugesendet, was ich genau bräuchte. Am 06.03. habe ich das Paket mit der microSD-Karte für die Aufnahmen auf die Post gebracht. Nun wird der Tierpfleger die Videos aufnehmen und mir wieder die microSD-Karte zurücksenden.
+Letzte Aktualisierung am 05.03.25: Der Tierpark Dählhölzli in Bern hat mir angeboten, dass ein Tierpfleger des Tierparkes mit seiner Drohne für 30 min. Aufnahmen für mich machen würde. Zuletzt habe ich ihnen dafür eine Beschreibung zugesendet, was ich genau bräuchte. Am 06.03. habe ich das Paket mit der microSD-Karte für die Aufnahmen auf die Post gebracht. Nun wird der Tierpfleger die Videos aufnehmen und mir wieder die microSD-Karte zurücksenden. <br> 
+Letzte Aktualisierung am 06.04.25: Durch technische Probleme beim Abheben der Drohne kann der Tierpark Dählhölzli nun doch kein Videomaterial mit einer Drohne aufnehmen. Nun habe ich das Angebot von ihnen angenommen, dass sie die Aufnahmen mit einem stationären Gerät versuchen. Im Gegenzug dazu darf ich am 10.04.25 den Tierpark Lange Erlen in Basel besuchen, um mit meiner eigenen Drohne die Aufnahmen durchzuführen. 
 #### Aufnahme des Wolfs-Bildmaterials 
 Prinzipiell gibt es zwei Ansätze für die Aufnahme des Bildmaterials. 
 Eine Möglichkeit wäre, eine Drohne in größerer Höhe über die Wölfe fliegen zu lassen. Alternativ könnte eine stationäre Kamera für einen begrenzten Zeitraum an einem erhöhten Punkt installiert werden, um die Wölfe von oben zu filmen. Für beide Optionen brauche ich ungefähr 1,5 Stunden Videomaterial, in dem der Wolf aus der Vogelperspektive sichtbar ist. Es ist egal, auf wie viele Teilvideos die Aufnahmen verteilt sind – wichtig ist nur, dass die Drohne / der Wolf bei einem stationären Gerät nicht an Ort und Stelle bleibt, sondern in Bewegung ist, um verschiedene Situationen und Blickwinkel einzufangen. Die Höhe der Aufnahmen überlasse ich den Gegebenheiten vor Ort, denn oftmals ist das Wolfs-Gehege stark bewaldet, was z.B. einen Drohnenflug stark eingrenzt. Der Wolf sollte auf den Aufnahmen einfach gut erkennbar sein. 
 #### Aufnahme des Schaf-Bildmaterials 
-Die Aufnahme des Schaf-Bildmaterials lässt sich etwas einfacher gestalten. Hier ist es möglich, einen Bauer anzufragen, ob ich über seine Schafsherde mit einer Drohne fliegen darf. Schafe hat es beispielsweise bei Roggwil, zwischen Frasnacht und Egnach oder vor St.Gallen.
+Die Aufnahme des Schaf-Bildmaterials lässt sich etwas einfacher gestalten. Hier ist es möglich, einen Bauer anzufragen, ob ich über seine Schafsherde mit einer Drohne fliegen darf. Schafe hat es beispielsweise bei Roggwil, bei Stachen, zwischen Frasnacht und Egnach oder vor St.Gallen.
 #### Beschriftung des Bildmaterials
 Um das Bildmaterial zu beschriften, kann das Bildmaterial z.B. per API automatisiert in Chat GPT hereingeladen werden. Danach kann ein Prompt für die Position des Wolfes gestellt werden und anschliessend die Rückgabe in einem grossen Datenset dem Bild zugeordnet werden. Jedoch wird dieses Verfahren nur mit 80 % des Bildmaterials durchgeführt. Die anderen 20 % des Bildmaterials werden später für das Testen der KI benötigt. 
 Alternativen zu Chat GPT sind <a href="https://labelbox.com/ ">Labelbox</a>, <a href="https://roboflow.com/annotate">Roboflow</a>, Labellmg, <a href="https://labelstud.io/">Labelstudio</a> und <a href="https://www.makesense.ai/ ">Makesense.Ai</a>
@@ -97,8 +98,9 @@ Im Umfang dieses Projekts ist ebenfalls die Installation des Raspberry Pi AI-Bes
       <td>88.90 Fr.</td>
     </tr>
     <tr>
-      <td>Stick?</td>
-      <td></td>
+      <td>Stick <br>
+      https://www.galaxus.ch/de/s1/product/samsung-flash-drive-type-c-512-gb-usb-c-usb-31-usb-stick-44685411?supplier=406802&utm_source=google&utm_medium=cpc&utm_campaign=PMax:+PROD_CH_SSC_Cluster_0.3(C)&campaignid=20975956292&adgroupid=&adid=&dgCidg=CjwKCAjwzMi_BhACEiwAX4YZUIyccBdJ3BmYM50i18C6lFZ4XaK05ULealtZP998f3yWRfcvFZrlhRoCWsQQAvD_BwE&gad_source=1&gclid=CjwKCAjwzMi_BhACEiwAX4YZUIyccBdJ3BmYM50i18C6lFZ4XaK05ULealtZP998f3yWRfcvFZrlhRoCWsQQAvD_BwE&gclsrc=aw.ds</td>
+      <td>49.70 Fr.</td>
     </tr>
   </tbody>
 </table>
