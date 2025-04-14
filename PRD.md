@@ -9,9 +9,15 @@ Bereits angefragte Zoos sind der Tierpark Dählhölzli Bern, der Tierpark Wilhel
 
 Letzte Aktualisierung am 05.03.25: Der Tierpark Dählhölzli in Bern hat mir angeboten, dass ein Tierpfleger des Tierparkes mit seiner Drohne für 30 min. Aufnahmen für mich machen würde. Zuletzt habe ich ihnen dafür eine Beschreibung zugesendet, was ich genau bräuchte. Am 06.03. habe ich das Paket mit der microSD-Karte für die Aufnahmen auf die Post gebracht. Nun wird der Tierpfleger die Videos aufnehmen und mir wieder die microSD-Karte zurücksenden. <br> 
 Letzte Aktualisierung am 06.04.25: Durch technische Probleme beim Abheben der Drohne kann der Tierpark Dählhölzli nun doch kein Videomaterial mit einer Drohne aufnehmen. Nun habe ich das Angebot von ihnen angenommen, dass sie die Aufnahmen mit einem stationären Gerät versuchen. Im Gegenzug dazu darf ich am 10.04.25 den Tierpark Lange Erlen in Basel besuchen, um mit meiner eigenen Drohne die Aufnahmen durchzuführen. 
-#### Aufnahme des Wolfs-Bildmaterials 
+#### Aufnahme des Wolf-Bildmaterials 
 Prinzipiell gibt es zwei Ansätze für die Aufnahme des Bildmaterials. 
 Eine Möglichkeit wäre, eine Drohne in größerer Höhe über die Wölfe fliegen zu lassen. Alternativ könnte eine stationäre Kamera für einen begrenzten Zeitraum an einem erhöhten Punkt installiert werden, um die Wölfe von oben zu filmen. Für beide Optionen brauche ich ungefähr 1,5 Stunden Videomaterial, in dem der Wolf aus der Vogelperspektive sichtbar ist. Es ist egal, auf wie viele Teilvideos die Aufnahmen verteilt sind – wichtig ist nur, dass die Drohne / der Wolf bei einem stationären Gerät nicht an Ort und Stelle bleibt, sondern in Bewegung ist, um verschiedene Situationen und Blickwinkel einzufangen. Die Höhe der Aufnahmen überlasse ich den Gegebenheiten vor Ort, denn oftmals ist das Wolfs-Gehege stark bewaldet, was z.B. einen Drohnenflug stark eingrenzt. Der Wolf sollte auf den Aufnahmen einfach gut erkennbar sein. 
+<br>
+<br>
+Erkenntnisse Aufnahmen Tierpark Lange Erlen:<br>
+Alles verlief ausgesprochen gut, und ich konnte einige wenige, dafür jedoch sehr gute Aufnahmen machen. Wir haben das Wolfsgehege durchgehend von 10:30 Uhr bis kurz vor 18:00 Uhr beobachtet. Allerdings haben sich die Wölfe ab Mittag kaum mehr gezeigt, da sie sich meist unter den Bäumen zum Schlafen zurückgezogen haben. Am Vormittag hingegen waren sie deutlich aktiver.
+Es war ein wenig schade, dass ich nicht genügend Videomaterial für mein Projekt erhalten habe. Dafür ist die Qualität des vorhandenen Videomaterials optimal für meine Arbeit.
+
 #### Aufnahme des Schaf-Bildmaterials 
 Die Aufnahme des Schaf-Bildmaterials lässt sich etwas einfacher gestalten. Hier ist es möglich, einen Bauer anzufragen, ob ich über seine Schafsherde mit einer Drohne fliegen darf. Schafe hat es beispielsweise bei Roggwil, bei Stachen, bei Güttingen und zwischen Frasnacht und Egnach oder vor St.Gallen.
 #### Beschriftung des Bildmaterials
