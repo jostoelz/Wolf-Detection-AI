@@ -24,7 +24,15 @@
       <td>07.04.25</td>
     </tr>
     <tr>
-      <td>Aufnahme Videomaterial von Schafen</td>
+      <td>Aufnahme Videomaterial von Schafen & Wölfen</td>
+      <td>28.04.25</td>
+    </tr>
+    <tr>
+      <td>Bilder aus Internet von Hunden & anderen Tieren & Landschaften speichern</td>
+      <td>28.04.25</td>
+    </tr>
+    <tr>
+      <td>Crash-Kurs zur Bewertung einer Objekterkennung-KI absolvieren</td>
       <td>28.04.25</td>
     </tr>
     <tr>
@@ -33,27 +41,27 @@
     </tr>
     <tr>
       <td>Beschriftung Bildmaterial</td>
-      <td>28.04.25</td>
+      <td>19.05.25</td>
     </tr>
     <tr>
       <td>Training der KI mit dem Bildmaterial</td>
-      <td>12.05.25</td>
-    </tr>
-    <tr>
-      <td>Überprüfung der Erfolgsquote der KI</td>
-      <td>26.05.25</td>
+      <td>09.06.25</td>
     </tr>
     <tr>
       <td>Bestellung Materialien</td>
-      <td>26.05.25</td>
+      <td>09.06.25</td>
     </tr>
     <tr>
-      <td>Installierung Raspberry Pi Kamera + Beschleuniger (inkl. Montage auf Drohne)</td>
+      <td>Überprüfung der Erfolgsquote der KI</td>
       <td>23.06.25</td>
     </tr>
     <tr>
-      <td>Installierung der KI auf dem Raspberry Pi</td>
+      <td>Installierung Raspberry Pi Kamera + Beschleuniger (inkl. Montage auf Drohne)</td>
       <td>08.09.25</td>
+    </tr>
+    <tr>
+      <td>Installierung der KI auf dem Raspberry Pi</td>
+      <td>22.09.25</td>
     </tr>
     <tr>
       <td>Reserve oder optionale Features einbauen</td>
