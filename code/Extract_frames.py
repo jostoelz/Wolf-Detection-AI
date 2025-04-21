@@ -27,4 +27,4 @@ while cap.isOpened():
     frame_count += 1
 
 cap.release()
-print("Frame extraction complete.")
+print("Frame extraction completed")
