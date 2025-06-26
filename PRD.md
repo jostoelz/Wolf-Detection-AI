@@ -17,6 +17,10 @@ Eine Möglichkeit wäre, eine Drohne in größerer Höhe über die Wölfe fliege
 Erkenntnisse Aufnahmen Tierpark Lange Erlen:<br>
 Alles verlief ausgesprochen gut, und ich konnte einige wenige, dafür jedoch sehr gute Aufnahmen machen. Wir haben das Wolfsgehege durchgehend von 10:30 Uhr bis kurz vor 18:00 Uhr beobachtet. Allerdings haben sich die Wölfe ab Mittag kaum mehr gezeigt, da sie sich meist unter den Bäumen zum Schlafen zurückgezogen haben. Am Vormittag hingegen waren sie deutlich aktiver.
 Es war ein wenig schade, dass ich nicht genügend Videomaterial für mein Projekt erhalten habe. Dafür ist die Qualität des vorhandenen Videomaterials optimal für meine Arbeit.
+<br>
+<br>
+Erkenntnisse Aufnahmen Tierpark Feldkirch:<br>
+Um mein Videomaterial zu ergänzen, habe ich den Tierpark Feldkirch besucht. Das Wolfsgehege war stark bewaldet, was die Flüge etwas eingeschränkt haben. Das Verhalten der Wölfe war jedoch sehr unterschiedlich zu demjenigen im Tierpark Lange Erlen. Die zwei Wölfe haben sich durchgängig bewegt und gezeigt. 
 
 #### Aufnahme des Schaf-Bildmaterials 
 Die Aufnahme des Schaf-Bildmaterials lässt sich etwas einfacher gestalten. Hier ist es möglich, einen Bauer anzufragen, ob ich über seine Schafsherde mit einer Drohne fliegen darf. Schafe hat es beispielsweise bei Roggwil, bei Stachen, bei Güttingen und zwischen Frasnacht und Egnach oder vor St.Gallen.
