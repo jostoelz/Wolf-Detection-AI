@@ -20,10 +20,10 @@ Es war ein wenig schade, dass ich nicht genügend Videomaterial für mein Projek
 <br>
 <br>
 Erkenntnisse Aufnahmen Tierpark Feldkirch:<br>
-Um mein Videomaterial zu ergänzen, habe ich den Tierpark Feldkirch besucht. Das Wolfsgehege war stark bewaldet, was die Flüge etwas eingeschränkt haben. Das Verhalten der Wölfe war jedoch sehr unterschiedlich zu demjenigen im Tierpark Lange Erlen. Die zwei Wölfe haben sich durchgängig bewegt und gezeigt. 
+Um mein Videomaterial zu ergänzen, habe ich den Tierpark Feldkirch besucht. Das Wolfsgehege war stark bewaldet, was die Flüge etwas eingeschränkt haben. Das Verhalten der Wölfe war jedoch sehr unterschiedlich zu demjenigen im Tierpark Lange Erlen. Die zwei Wölfe haben sich durchgängig bewegt und gezeigt. Die Sichtverhältnisse waren ebenfalls unterschiedlich zu den bereits gesammelten, weshalb sie mir gut weiterhelfen. Sowohl im Tierpark Lange Erlen als auch im Tierpark Feldkirch düfte ich bei Bedarf nochmals vorbeikommen. 
 
 #### Aufnahme des Schaf-Bildmaterials 
-Die Aufnahme des Schaf-Bildmaterials lässt sich etwas einfacher gestalten. Hier ist es möglich, einen Bauer anzufragen, ob ich über seine Schafsherde mit einer Drohne fliegen darf. Schafe hat es beispielsweise bei Roggwil, bei Stachen, bei Güttingen und zwischen Frasnacht und Egnach oder vor St.Gallen.
+Die Aufnahme des Schaf-Bildmaterials lässt sich etwas einfacher gestalten. Hier ist es möglich, einen Bauer anzufragen, ob ich über seine Schafsherde mit einer Drohne fliegen darf. Schafe hat es beispielsweise bei Roggwil, bei Stachen, bei Güttingen und zwischen Frasnacht und Egnach oder vor St.Gallen. 
 #### Beschriftung des Bildmaterials
 Um das Bildmaterial zu beschriften, kann das Bildmaterial z.B. per API automatisiert in Chat GPT hereingeladen werden. Danach kann ein Prompt für die Position des Wolfes gestellt werden und anschliessend die Rückgabe in einem grossen Datenset dem Bild zugeordnet werden. Jedoch wird dieses Verfahren nur mit 80 % des Bildmaterials durchgeführt. Die anderen 20 % des Bildmaterials werden später für das Testen der KI benötigt. 
 Alternativen zu Chat GPT sind <a href="https://labelbox.com/ ">Labelbox</a>, <a href="https://roboflow.com/annotate">Roboflow</a>, Labellmg, <a href="https://labelstud.io/">Labelstudio</a>, <a href="https://www.cvat.ai/">CVAT</a> und <a href="https://www.makesense.ai/ ">Makesense.Ai</a>
