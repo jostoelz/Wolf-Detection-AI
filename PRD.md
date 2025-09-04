@@ -43,7 +43,7 @@ Ich habe das Training eines YOLO-Modells in Google Colab mit einem Test-Datensat
 <br>
 Beim zweiten Versuch erhielt der Datensatz 500 Trainingsbilder (1 Klasse). Das YOLO v8s-Modell wurde mit 50 Epochen, einer Bildgrösse von 640 Pixeln und einer Batch-Grösse von 16 trainiert. Es erreichte eine Precision von 0.94, ein Recall von 0.96, ein mAP50 von 0.98 und ein mAP50-95 von 0.8. 
 <br>
-Der dritte Versuch erbrachte mit dem gleichen Datensatz mit 70 Epochen, 640 Pixeln, 32 Batches und dem YOLO v8n-Modell die folgende Resultate: Precision = 0.99, Recall = 0.96, mAP50 = 0.99, mAP50-95 = 0.76. Auf sehr ähnlichen Bildern, wie im Trainingsset, funktioniert das Modell sehr gut. Hingegen auf komplett neuen Bildern reagiert es relativ schlecht. 
+Der dritte Versuch erbrachte mit dem gleichen Datensatz mit 70 Epochen, 640 Pixeln, 32 Batches und dem YOLO v8n-Modell die folgende Resultate: Precision = 0.99, Recall = 0.96, mAP50 = 0.99, mAP50-95 = 0.76. Auf sehr ähnlichen Bildern, wie im Trainingsset, funktioniert das Modell sehr gut. Hingegen auf komplett neuen Bildern reagiert es relativ schlecht. Beispielsweise erkennt es Schafe teilweise als Wölfe, und aus neuen Perspektiven erkennt es keine Wölfe. 
 #### Alternative Durchführung
 Als Alternative kann auch ein schon bestehendes Modell weitertrainiert werden. Das hat den Vorteil, dass ich ein Modell spezifisch auf meine Anwendung verbessern kann, aber nicht von Grund auf alles selbst trainieren muss. Optionen wären beispielsweise <a href="https://github.com/google/cameratrapai">SpeciesNet</a>, welches auf Wildtier spezialisiert ist, oder <a href="https://huggingface.co/StephanST/unidrone">Unidrone</a>, welches auf Bilder aus der Vogelperspektive trainiert wurde.
 ### Überprüfung der Erfolgsquote der KI
