@@ -135,4 +135,46 @@ for image_path in iteration_images(input_check):
 
   button.on_click(on_button_clicked)
   display(button)
-``` 
+```
+```
+# code to write txt files for images without annotations
+
+# function to iterate over each image
+def iteration_images(folder):
+    entries = sorted(os.scandir(folder), key=lambda e: e.name.lower())
+    for entry in entries:
+        if entry.is_file() and entry.name.lower().endswith(('.jpg', '.jpeg', '.png')):
+            # returns image for image
+            yield entry.path
+
+for image_path in iteration_images(input_check):
+  image_filename = os.path.basename(image_path)
+  # loads an image
+  image = cv2.imread(image_path)
+  # converts into a PIL-image
+  image_pil = Image.open(image_path).convert("RGB")
+  # changes the type of image to jpg
+  jpg_filename = os.path.splitext(image_filename)[0] + ".jpg"
+  folders = [output_train_folder, output_valid_folder, output_test_folder]
+  probabilities = [0.8, 0.1, 0.1]
+  # chooses between train, valid, test
+  choice_folder = random.choices(folders, weights=probabilities, k=1)[0]
+  images_folder = os.path.join(choice_folder, "Images")
+  jpg_output_path = os.path.join(images_folder, jpg_filename)
+  # saves the image
+  image_pil.save(jpg_output_path, "JPEG")
+
+  # creates the txt file
+  txt_filename = os.path.splitext(image_filename)[0] + ".txt"
+  txt_folder = os.path.join(choice_folder, "Labels")
+  txt_output_path = os.path.join(txt_folder, txt_filename)
+  with open(txt_output_path, "w") as f:
+    # writes nothing into the file
+    text = ''
+    f.write(text)
+
+  jpg_input_path = os.path.join(input_check, image_filename)
+  if os.path.exists(jpg_input_path):
+    os.remove(jpg_input_path)
+```
+
