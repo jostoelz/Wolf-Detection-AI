@@ -1,3 +1,5 @@
+# code to extract frames from videos
+
 import cv2
 import os
 
@@ -8,7 +10,7 @@ os.makedirs(output_folder, exist_ok=True)
 cap = cv2.VideoCapture(video_path)
 fps = cap.get(cv2.CAP_PROP_FPS)
 
-frame_interval = int(fps / 3)  # drei Frames pro Sekunde
+frame_interval = int(fps / 3)  # 3 frames per second
 
 frame_count = 0
 saved_frame = 4593
@@ -28,3 +30,4 @@ while cap.isOpened():
 
 cap.release()
 print("Frame extraction completed.")
+
