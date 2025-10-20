@@ -62,7 +62,7 @@ Der dritte Versuch erbrachte mit dem gleichen Datensatz mit 70 Epochen, 640 Pixe
 <br>
 Der nächste Test wurde wieder mit dem gleichen Datensatz bei 100 Epochen, 640 Pixeln, 32 Batches und dem YOLO v8m-Modell trainiert. Es erreichte die folgende Resultate: Precision = 0.99, Recall = 0.91, mAP50 = 0.98, mAP50-95 = 0.82.
 #### Durchführung mit dem finalen Datensatz
-Ich folge dem gleichen Vorgehen wie mit dem Test-Datensatz durchgeführt. Das Modell erreicht mit einem YOLO v8m-Modell-Training bei 100 Epochen, 640 Pixeln, 32 Batches die folgenden Resultate: Precision = , Recall = , mAP50, mAP50-95 = .
+Ich folge dem gleichen Vorgehen wie mit dem Test-Datensatz durchgeführt. Das Modell erreicht mit einem YOLO v8m-Modell-Training bei 100 Epochen, 640 Pixeln, 32 Batches die folgenden Resultate: Precision = , Recall = , mAP50, mAP50-95 = . Das trainierte Modell ("pt"-Datei) kann <a href="">hier</a> heruntergeladen werden.
 #### Alternative Durchführung
 Als Alternative kann auch ein schon bestehendes Modell weitertrainiert werden. Das hat den Vorteil, dass ich ein Modell spezifisch auf meine Anwendung verbessern kann, aber nicht von Grund auf alles selbst trainieren muss. Optionen wären beispielsweise <a href="https://github.com/google/cameratrapai">SpeciesNet</a>, welches auf Wildtier spezialisiert ist, oder <a href="https://huggingface.co/StephanST/unidrone">Unidrone</a>, welches auf Bilder aus der Vogelperspektive trainiert wurde.
 ### Überprüfung der Erfolgsquote der KI
@@ -93,7 +93,7 @@ Im Umfang dieses Projekts ist ebenfalls die Installation des Raspberry Pi AI-Bes
 * Potenzial zur Verbesserung liegt in der Verwendung von <a href="https://www.researchgate.net/publication/370194602_Day-to-night_image_translation_via_transfer_learning_to_keep_semantic_information_for_driving_simulator">Transfer Learning</a>, um beispielsweise Tagesbilder in Nachtbilder oder Sommerbilder in Winterbilder umzuwandeln und so die Robusheit des Modells zu verbessern. Alternativ könnte auch eine Wärmebildkamera verwendet werden. Dann wäre aber die Aufnahme der Bilder deutlich zeitintensiver.
 
 # Hinweise zur Benutzung
-Dieses <a href="https://colab.research.google.com/drive/1o5hgyjbkZwoVnYPL-1KSa5cvSLf4A5k9?usp=sharing">Google Colab Notebook</a> verfügt über den Code, der für das Training und die Benutzung der KI notwendig ist. Falls nicht nochmals neu trainiert werden möchte, sollte der Pfad für die "pt"-Datei angepasst werden. Falls am 
+Dieses <a href="https://colab.research.google.com/drive/1o5hgyjbkZwoVnYPL-1KSa5cvSLf4A5k9?usp=sharing">Google Colab Notebook</a> verfügt über den Code, der für das Training und die Benutzung der KI notwendig ist. Falls nicht nochmals neu trainiert werden möchte, sollte der Pfad für die "pt"-Datei angepasst werden. 
   
 # Materialliste
 <table>
