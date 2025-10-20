@@ -93,8 +93,7 @@ Im Umfang dieses Projekts ist ebenfalls die Installation des Raspberry Pi AI-Bes
 * Potenzial zur Verbesserung liegt in der Verwendung von <a href="https://www.researchgate.net/publication/370194602_Day-to-night_image_translation_via_transfer_learning_to_keep_semantic_information_for_driving_simulator">Transfer Learning</a>, um beispielsweise Tagesbilder in Nachtbilder oder Sommerbilder in Winterbilder umzuwandeln und so die Robusheit des Modells zu verbessern. Alternativ könnte auch eine Wärmebildkamera verwendet werden. Dann wäre aber die Aufnahme der Bilder deutlich zeitintensiver.
 
 # Hinweise zur Benutzung
-Dieses <a href="https://colab.research.google.com/drive/1o5hgyjbkZwoVnYPL-1KSa5cvSLf4A5k9?usp=sharing">Google Colab Notebook</a> verfügt über den Code, der für das Training und die Benutzung der KI notwendig ist. Falls nicht nochmals neu trainiert werden möchte, sollte der Pfad für die "pt"-Datei angepasst werden. 
-  
+Dieses <a href="https://colab.research.google.com/drive/1o5hgyjbkZwoVnYPL-1KSa5cvSLf4A5k9?usp=sharing">Google Colab Notebook</a> verfügt über den Code, der für das Training und die Benutzung der KI notwendig ist. Falls nicht nochmals neu trainiert werden möchte, sollte der Pfad für die "pt"-Datei angepasst werden. Beim <a href="https://colab.research.google.com/drive/1DJzyPceMakVeashy7c20rP2ksB7nRpF7?usp=sharing">Label-Prozess</a> kann ebenfalls herumgespielt werden. Auch hier sollten die Pfade geändert werden.
 # Materialliste
 <table>
   <thead>
