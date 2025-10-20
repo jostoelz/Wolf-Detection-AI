@@ -1,4 +1,5 @@
 # Upload des eigenes YOLO-Modells nach Roboflow, um dort Hilfe beim Annotieren von Hand zu erhalten
+Dies ist die <a href="https://docs.roboflow.com/deploy/upload-custom-weights">Anleitung</a> dazu. 
 ```
 # preparations
 !pip install roboflow
