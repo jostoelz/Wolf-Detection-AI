@@ -20,9 +20,9 @@ Danach war es möglich, das YOLO-Modell mit dem eigenen Datensatz zu trainieren:
 import os
 
 dataset = version.download("yolov8")
-dataset_dir = dataset.location  # Assuming 'dataset' has an attribute 'location' for the download path
+dataset_dir = dataset.location
 data_yaml_path = os.path.join(dataset_dir, "data.yaml")
-model = YOLO("yolov8n.pt")  # YOLOv8 Nano als Basis
+model = YOLO("yolov8n.pt")
 model.train(data=data_yaml_path, epochs=50, batch=16, imgsz=640)
 ```
 Mit dem nachfolgenden Code kann das trainierte Modell validiert werden:
