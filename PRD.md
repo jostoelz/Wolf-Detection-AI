@@ -32,7 +32,8 @@ Alternativen zu Chat GPT sind <a href="https://labelbox.com/ ">Labelbox</a>, <a 
 Als ich ein Test-Datensatz erstellt habe, bin ich dem folgenden <a href="https://www.youtube.com/watch?v=SDV6Gz0suAk">Video</a> gefolgt, das eine automatisierte Beschriftung des Bildmaterials mithilfe von Roboflow zeigt. Das Datenset kann direkt in einer gewünschten Form heruntergeladen werden. Es können verschiedene Klassen festgelegt werden und bei falschen / ungenauen Beschriftungen selbständig angepasst werden. Ebenso kann die Grösse des Train, Valid und Test Set angepasst werden. Aber auch die Bildgrösse ist frei wählbar und Augmentation kann hinzugefügt werden. Die kostenlose Verwendung von Roboflow ist jedoch begrenzt.
 
 ##### Beschriftung des finalen Datensatzes
-Um Unterstützung bei der Beschriftung des Datensatzes zu erhalten, verwende ich Language Segment-Anything. Dies erlaubt es mir, einen Text-Input dem Modell zu übergeben. Daraufhin erkennt es (teilweise) die Objekte auf dem Bild und kann die genauen Koordinaten wiedergeben. Die Erfahrung zeigt, dass dies bei gut erkennbaren, kontrastreichen Bildern funktioniert. Unter diesem <a href="https://kantonsschuleromanshorn-my.sharepoint.com/:f:/g/personal/jostoelz_ksr_ch/EmrC34QCeMNMh5nsG0g5v4YBju3Qs9Egffm7CIumSYiHmQ?e=mAljjI">Link</a> ist das finale Datenset auffindbar. 
+Um Unterstützung bei der Beschriftung des Datensatzes zu erhalten, verwende ich Language Segment-Anything. Dies erlaubt es mir, einen Text-Input dem Modell zu übergeben. Daraufhin erkennt es (sollte) die Objekte auf dem Bild und kann die genauen Koordinaten wiedergeben. Meine Erfahrung zeigt, dass dies bei kontrastreichen Bildern funktioniert, bei welchen das Objekt gut erkennbar ist. Bei den Bildern, bei denen es das Objekt nicht korrekt entdeckt, lade ich nach Roboflow. Dort habe ich in diesem <a href="https://app.roboflow.com/join/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3b3Jrc3BhY2VJZCI6InZNaVZaYXJJQ3doektaNjd6RzBUUGVjMUZGYjIiLCJyb2xlIjoib3duZXIiLCJpbnZpdGVyIjoiam9oYW5uZXNAc3RvZWx6bGUuY2giLCJpYXQiOjE3NTcxNDI5Njd9.w-96dd0NI6Ibx1FXdsql3DxaohJ1o-sxa0B4HMuUH80
+">Projekt</a> per Hand beschriftet. Sobald ich alle Bilder beschriftet habe, lade ich das vorläufige Datenset erneut auf Roboflow, um es augmentieren zu lassen. Dies ist das <a href="https://app.roboflow.com/join/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3b3Jrc3BhY2VJZCI6Ik1QcGVSd05DZ3hVdkZkbWllRXlJS2o5WGh4dDIiLCJyb2xlIjoib3duZXIiLCJpbnZpdGVyIjoiam9oYW5uZXNAc3RvZWx6bGUuY2giLCJpYXQiOjE3NjA5NTg1MjZ9.zZHbh1AH8llGCRMbs-j2LtNB5tj9BL5wadROcMWHjiQ">Projekt</a> dazu. Danach lade ich den Datensatz von Roboflow herunter und kann diesen für das Training benutzen. Unter diesem <a href="https://kantonsschuleromanshorn-my.sharepoint.com/:f:/g/personal/jostoelz_ksr_ch/EmrC34QCeMNMh5nsG0g5v4YBju3Qs9Egffm7CIumSYiHmQ?e=mAljjI">Link</a> ist das finale Datenset aufrufbar. 
 ### Installierung eines YOLO-Models
 Das folgende <a href="https://www.youtube.com/watch?v=_WKS4E9SmkA">Video</a> zeigt, dass das YOLO11n Modell die beste Variante für Echtzeit Objekterkennung auf dem Raspberry Pi 5 ist (das dazu verwendete Datenset hat 750 Bildern und wurde im Format NCNN exportiert). <br>
 Siehe Links: https://www.youtube.com/watch?v=LNwODJXcvt4 <br>
@@ -52,8 +53,7 @@ Der nächste Test wurde wieder mit dem gleichen Datensatz bei 100 Epochen, 640 P
 #### Alternative Durchführung
 Als Alternative kann auch ein schon bestehendes Modell weitertrainiert werden. Das hat den Vorteil, dass ich ein Modell spezifisch auf meine Anwendung verbessern kann, aber nicht von Grund auf alles selbst trainieren muss. Optionen wären beispielsweise <a href="https://github.com/google/cameratrapai">SpeciesNet</a>, welches auf Wildtier spezialisiert ist, oder <a href="https://huggingface.co/StephanST/unidrone">Unidrone</a>, welches auf Bilder aus der Vogelperspektive trainiert wurde.
 ### Überprüfung der Erfolgsquote der KI
-Um die Erfolgsquote der KI zu ermitteln, werden die restlichen 20 % des Bildmaterials in die KI geladen. <br>
-Siehe Link: https://labelyourdata.com/articles/object-detection-metrics
+Um die <a href="https://labelyourdata.com/articles/object-detection-metrics">Erfolgsquote</a der KI zu ermitteln, werden die restlichen 20 % des Bildmaterials in die KI geladen. Die sogenannte "Confusion Matrix" 
 ### Installierung der KI auf einem Raspberry Pi
 Siehe Link: https://roboflow.com/how-to-deploy/deploy-yolov8-to-the-raspberry-pi  <br>
 Die KI kann nun auf den Raspberry Pi herüberkopiert (z.B. im Dateiformat TensorFlow Lite) werden. Dazu muss nur der Raspberry Pi über SSH an den Computer verbunden sein. Dann kann die KI auf den Raspberry Pi herüberkopiert werden. Damit die Erkennung auch problemlos mit der Raspberry Pi Kamera funktioniert, müssen die Auflösung und das Bildformat an das Bildmaterial angepasst werden, das für das Training der KI verwendet wurde. Deshalb muss man die Bilder der Kamera nach Erhalt etwas anpassen, bevor man sie in die KI gibt. Ebenso darf z.B. nur alle halbe Sekunde ein Bild an die KI weitergegeben werden, sodass verhindert wird, dass der Raspberry Pi nicht überbeansprucht wird. 
@@ -63,8 +63,8 @@ Um ein neuronales Netzwerk auf einem Raspberry Pi laufen lassen zu können, ben�
 Im Umfang dieses Projekts ist ebenfalls die Installation des Raspberry Pi AI-Beschleunigers, des Kühlers etc. auf einer Drohne enthalten. Dafür müssen unter anderem mit dem 3D-Drucker personalisierte Schrauben hergestellt werden. Auch die elektronische Verkabelung der neuen Komponenten gehört zu diesem Schritt.
 ## Optionale Features
 * Da ich die Wolfs-Bilder nicht mit einer Wärmebildkamera (Stand: 24.02.25) aufnehmen kann, aber den Wolf auch in Dunkelheit erkennen möchte, könnte ich ein Wärmebild-Filter über das Bildmaterial legen. Anschliessend könnte ich die KI neu trainieren und testen, wie gut das System nun auch Wölfe in der Nacht erkennen kann.
-* Ein anderes optionale Feature wäre das Ausprobieren verschiedener YOLO-Modelle und Trainings-Parameter, um die bestmöglichste KI auf einem Raspberry Pi herauszufinden. Dabei muss zwischen Genauigkeit und Geschwindigkeit abgewogen werden.
-* Eine andere Erweiterung ist, dass die Koordinaten des Wolfes auf dem Bild ausgegeben werden können.
+* Ein anderes optionale Feature wäre das Ausprobieren verschiedener YOLO-Modelle und Trainings-Parameter, um die bestmöglichste KI auf einem Raspberry Pi herauszufinden. Dabei muss zwischen Genauigkeit und Geschwindigkeit abgewogen werden. (erledigt)
+* Eine andere Erweiterung ist, dass die Koordinaten des Wolfes auf dem Bild ausgegeben werden können. (erledigt)
 * Ebenso kann untersucht werden, ob die selbst erstellte KI besser performt als z.B. Chat-GPT API Anfragen oder andere open source object detection Modelle.
 * Ich könnte auch das externe YOLO-Modell ersetzen und meinen eigenen Code für die KI schreiben.
 
@@ -74,6 +74,9 @@ Im Umfang dieses Projekts ist ebenfalls die Installation des Raspberry Pi AI-Bes
 * Eine weitere Problematik ist die Speicherung der mehreren Tausend / Zehntausend / Hundertausend Bildern.
 * Ebenso müsste ich mir die Frage stellen, wenn ich ein stationäres Gerät zur Aufnahme verwenden würde, wie ich die Wolfs-Bilder mit nicht Wolfs-Bilder filtere. Ich sollte nur die Wolfs-Bilder speichern, um nicht mehrheitlich Fehl-Bilder zu erhalten.
 
+# Optimierungspotenzial
+* Potenzial zur Verbesserung liegt in der Verwendung von <a href="https://www.researchgate.net/publication/370194602_Day-to-night_image_translation_via_transfer_learning_to_keep_semantic_information_for_driving_simulator">Transfer Learning</a>, um beispielsweise Tagesbilder in Nachtbilder oder Sommerbilder in Winterbilder umzuwandeln und so die Robusheit des Modells zu verbessern. Alternativ könnte auch eine Wärmebildkamera verwendet werden. Dann wäre aber die Aufnahme der Bilder deutlich zeitintensiver.
+  
 # Materialliste
 <table>
   <thead>
@@ -84,42 +87,42 @@ Im Umfang dieses Projekts ist ebenfalls die Installation des Raspberry Pi AI-Bes
   </thead>
   <tbody>
     <tr>
-      <td>Raspberry Pi Lüfter:<br>
+      <td>Raspberry Pi Lüfter (nicht benutzt):<br>
         https://www.reichelt.com/ch/de/shop/produkt/raspberry_pi_-_luefter_fuer_raspberry_pi_5-360116?q=%2Fapi%2Fuser%2FcountrySelect%2Fde%2Fhttps%3A%2F%2Fwww.reichelt.de%2Fde%2Fde%2Fshop%2Fprodukt%2Fraspberry_pi_-_luefter_fuer_raspberry_pi_5-360116 </td>
       <td>5.47 Fr.</td>
     </tr>
     <tr>
-      <td>Raspberry Pi AI Beschleuniger:<br>
+      <td>Raspberry Pi AI Beschleuniger (nicht benutzt):<br>
         https://www.reichelt.com/ch/de/shop/produkt/raspberry_pi_shield_-_ai_ki_26_tops_raspberry_pi_5-390448 </td>
       <td>106.86 Fr.</td>
     </tr>
     <tr>
-      <td>Raspberry Pi Kamera:<br>
+      <td>Raspberry Pi Kamera (nicht benutzt):<br>
       https://www.reichelt.com/ch/de/shop/produkt/raspberry_pi_-_kamera_12mp_120_v3-339260</td>
       <td>34 Fr.</td>
     </tr>
     <tr>
-      <td>Raspberry Pi Flachbandkabel für Kamera:<br>
+      <td>Raspberry Pi Flachbandkabel für Kamera (nicht benutzt):<br>
      https://www.reichelt.com/ch/de/shop/produkt/raspberry_pi_-_flachbandkabel_fuer_kamera_20_cm-360118</td>
       <td>1.20 Fr.</td>
     </tr>
         <tr>
-      <td>microSD-Karte: <br>
+      <td>microSD-Karte für die kurzfristige Speicherung der Videos der Drohne: <br>
         https://www.digitec.ch/de/s1/product/sandisk-extreme-microsdxc-sd-s-microsdxc-256-gb-u3-uhs-i-speicherkarte-20932251?supplier=406802&utm_source=google&utm_medium=cpc&utm_campaign=PROD_CH_PMAX_M6_C4&campaignid=21028347765&adgroupid=&adid=&dgCidg=Cj0KCQiA8q--BhDiARIsAP9tKI3RNmOl8y-l3OyqPT_JXIeHUGtxVwzwmUXusCfflVr4PLTbQIVooJAaAhv_EALw_wcB&gad_source=1&gclid=Cj0KCQiA8q--BhDiARIsAP9tKI3RNmOl8y-l3OyqPT_JXIeHUGtxVwzwmUXusCfflVr4PLTbQIVooJAaAhv_EALw_wcB&gclsrc=aw.ds </td>
       <td>28.60 Fr.</td>
     </tr>
     </tr>
         <tr>
-      <td>Paketkosten Tierpark Dählhölzli
+      <td>Paketkosten Tierpark Dählhölzli (für microSD-Karte, damit der Zoo Aufnahmen durchführen kann)
       <td>10.50 Fr.</td>
     </tr>
     <tr>
-      <td>Raspberry Pi 5:<br>
+      <td>Raspberry Pi 5, auf welchem meine KI läuft:<br>
       https://www.digitec.ch/de/s1/product/raspberry-pi-5-8gb-entwicklungsboard-kit-38955607</td>
       <td>88.90 Fr.</td>
     </tr>
     <tr>
-      <td>Stick <br>
+      <td>Stick für die Speicherung der Daten:<br>
       https://www.galaxus.ch/de/s1/product/samsung-flash-drive-type-c-512-gb-usb-c-usb-31-usb-stick-44685411?supplier=406802&utm_source=google&utm_medium=cpc&utm_campaign=PMax:+PROD_CH_SSC_Cluster_0.3(C)&campaignid=20975956292&adgroupid=&adid=&dgCidg=CjwKCAjwzMi_BhACEiwAX4YZUIyccBdJ3BmYM50i18C6lFZ4XaK05ULealtZP998f3yWRfcvFZrlhRoCWsQQAvD_BwE&gad_source=1&gclid=CjwKCAjwzMi_BhACEiwAX4YZUIyccBdJ3BmYM50i18C6lFZ4XaK05ULealtZP998f3yWRfcvFZrlhRoCWsQQAvD_BwE&gclsrc=aw.ds</td>
       <td>49.70 Fr.</td>
     </tr>
