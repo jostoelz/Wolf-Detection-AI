@@ -26,7 +26,7 @@ Um mein Videomaterial zu ergänzen, habe ich den Tierpark Feldkirch besucht. Das
 Die Aufnahme des Schaf-Bildmaterials lässt sich etwas einfacher gestalten. Hier ist es möglich, einen Bauer anzufragen, ob ich über seine Schafsherde mit einer Drohne fliegen darf. Schafe hat es beispielsweise bei Roggwil, bei Stachen, bei Güttingen und zwischen Frasnacht und Egnach oder vor St.Gallen. Der folgende <a href="https://kantonsschuleromanshorn-my.sharepoint.com/:f:/g/personal/jostoelz_ksr_ch/EnGPDY773H9CoM7qOfZ7IPQBbDPL26Ft6byjb68ZGkBGcA?e=Y3YVEi">Link</a> zeigt die Aufnahme der Schafe.
 #### Beschriftung des Bildmaterials
 Um das Bildmaterial zu beschriften, kann das Bildmaterial z.B. per API automatisiert in Chat GPT hereingeladen werden. Danach kann ein Prompt für die Position des Wolfes gestellt werden und anschliessend die Rückgabe in einem grossen Datenset dem Bild zugeordnet werden. Jedoch wird dieses Verfahren nur mit 80 % des Bildmaterials durchgeführt. Die anderen 20 % des Bildmaterials werden später für das Testen der KI benötigt. 
-Alternativen zu Chat GPT sind <a href="https://labelbox.com/ ">Labelbox</a>, <a href="https://roboflow.com/annotate">Roboflow</a>, Labellmg, <a href="https://labelstud.io/">Labelstudio</a>, <a href="https://www.cvat.ai/">CVAT</a> und <a href="https://www.makesense.ai/ ">Makesense.Ai</a> Schlussendlich sollten die Beschriftungen in dem folgenden <a href="https://docs.ultralytics.com/de/datasets/detect/">Stil</a> sein, aufgeteilt in "images" und "labels". 
+Alternativen zu Chat GPT sind <a href="https://labelbox.com/ ">Labelbox</a>, <a href="https://roboflow.com/annotate">Roboflow</a>, Labellmg, <a href="https://labelstud.io/">Labelstudio</a>, <a href="https://www.cvat.ai/">CVAT</a> und <a href="https://www.makesense.ai/ ">Makesense.Ai</a> Schlussendlich sollten die Beschriftungen in dem folgenden <a href="https://docs.ultralytics.com/de/datasets/detect/">Format</a> sein, aufgeteilt in "images" und "labels". 
 <br>
 ##### Beschriftung Test-Datensatz
 Als ich ein Test-Datensatz erstellt habe, bin ich dem folgenden <a href="https://www.youtube.com/watch?v=SDV6Gz0suAk">Video</a> gefolgt, das eine automatisierte Beschriftung des Bildmaterials mithilfe von Roboflow zeigt. Das Datenset kann direkt in einer gewünschten Form heruntergeladen werden. Es können verschiedene Klassen festgelegt werden und bei falschen / ungenauen Beschriftungen selbständig angepasst werden. Ebenso kann die Grösse des Train, Valid und Test Set angepasst werden. Aber auch die Bildgrösse ist frei wählbar und Augmentation kann hinzugefügt werden. Die kostenlose Verwendung von Roboflow ist jedoch begrenzt.
@@ -91,6 +91,9 @@ Im Umfang dieses Projekts ist ebenfalls die Installation des Raspberry Pi AI-Bes
 
 # Optimierungspotenzial
 * Potenzial zur Verbesserung liegt in der Verwendung von <a href="https://www.researchgate.net/publication/370194602_Day-to-night_image_translation_via_transfer_learning_to_keep_semantic_information_for_driving_simulator">Transfer Learning</a>, um beispielsweise Tagesbilder in Nachtbilder oder Sommerbilder in Winterbilder umzuwandeln und so die Robusheit des Modells zu verbessern. Alternativ könnte auch eine Wärmebildkamera verwendet werden. Dann wäre aber die Aufnahme der Bilder deutlich zeitintensiver.
+
+# Hinweise zur Benutzung
+Dieses <a href="https://colab.research.google.com/drive/1o5hgyjbkZwoVnYPL-1KSa5cvSLf4A5k9?usp=sharing">Google Colab Notebook</a> verfügt über den Code, der für das Training und die Benutzung der KI notwendig ist. Falls nicht nochmals neu trainiert werden möchte, sollte der Pfad für die "pt"-Datei angepasst werden. Falls am 
   
 # Materialliste
 <table>
