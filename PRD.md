@@ -66,7 +66,47 @@ Ich folge dem gleichen Vorgehen wie mit dem Test-Datensatz durchgeführt. Das Mo
 #### Alternative Durchführung
 Als Alternative kann auch ein schon bestehendes Modell weitertrainiert werden. Das hat den Vorteil, dass ich ein Modell spezifisch auf meine Anwendung verbessern kann, aber nicht von Grund auf alles selbst trainieren muss. Optionen wären beispielsweise <a href="https://github.com/google/cameratrapai">SpeciesNet</a>, welches auf Wildtier spezialisiert ist, oder <a href="https://huggingface.co/StephanST/unidrone">Unidrone</a>, welches auf Bilder aus der Vogelperspektive trainiert wurde.
 ### Überprüfung der Erfolgsquote der KI
-Um die <a href="https://labelyourdata.com/articles/object-detection-metrics">Erfolgsquote</a> der KI zu ermitteln, werden die restlichen 20 % des Bildmaterials in die KI geladen. Die sogenannte "Confusion Matrix" 
+Um die <a href="https://labelyourdata.com/articles/object-detection-metrics">Erfolgsquote</a> der KI zu ermitteln, werden die restlichen 20 % des Bildmaterials in die KI geladen. Wenn man wissen will, wie gut eine KI beim Erkennen von Objekten funktioniert, muss man ihre Ergebnisse mit der Realität vergleichen. Diese echten Daten nennt man Ground Truth. Das sind Bilder oder Videos, in denen Menschen die Objekte per Hand markiert haben. Die KI versucht, diese Objekte ebenfalls zu erkennen, und man überprüft dann, wie gut ihre Vorhersagen mit der Ground Truth übereinstimmen.<br>
+Bei der Auswertung unterscheidet man verschiedene Fälle:
+
+* True Positive (TP): Die KI erkennt ein Objekt richtig – es ist wirklich da und an der richtigen Stelle.
+* False Positive (FP): Die KI erkennt etwas, was gar kein echtes Objekt ist, also ein Fehlalarm.
+* False Negative (FN): Ein Objekt ist im Bild, aber die KI übersieht es.
+* True Negative (TN): Wird in der Objekterkennung kaum benutzt, weil es hier darum geht, Objekte zu finden – nicht ihre Abwesenheit zu bestätigen.
+<br>
+Ein sehr wichtiger Messwert ist der Intersection over Union, kurz IoU.
+Er zeigt, wie stark sich die Box, die die KI um ein Objekt zeichnet, mit der echten Box überlappt.
+Wenn sich die beiden Boxen gut decken, ist der IoU hoch – das heißt, die KI hat das Objekt sehr genau lokalisiert.
+Wenn sie sich kaum überschneiden, ist der IoU niedrig.
+Meist legt man einen Schwellenwert fest, zum Beispiel 0,5. Dann gilt eine Erkennung ab einem IoU von 0,5 als richtig.
+<br>
+Um zu bewerten, wie genau und wie vollständig die KI arbeitet, verwendet man zwei weitere Werte: Precision und Recall.
+Die Precision zeigt, wie viele der erkannten Objekte wirklich korrekt waren.
+Wenn die KI also zehn Dinge erkennt und acht davon richtig sind, beträgt die Precision 0,8 (also 80 %).
+Eine hohe Precision bedeutet: wenig Fehlalarme (wenig False Positives).
+Der Recall zeigt, wie viele der tatsächlich vorhandenen Objekte die KI gefunden hat.
+Wenn zehn Objekte im Bild sind und die KI nur acht erkennt, liegt der Recall bei 80 %.
+Ein hoher Recall bedeutet: die KI übersieht kaum etwas (wenig False Negatives).
+Oft ist es schwer, beides gleichzeitig perfekt hinzubekommen – wenn man die KI sehr vorsichtig einstellt, bekommt man weniger Falschmeldungen (hohe Precision), aber übersieht vielleicht manche Objekte (niedriger Recall).
+<br>
+Um einen guten Kompromiss zwischen Precision und Recall zu finden, verwendet man den F1-Score.
+Er ist das harmonische Mittel der beiden Werte und zeigt, wie ausgewogen das Modell zwischen Genauigkeit und Vollständigkeit arbeitet.
+Ein hoher F1-Score bedeutet, dass die KI weder zu viele Fehler macht noch zu viele Objekte übersieht.
+<br>
+Wenn die KI mehrere Objektarten erkennen soll (zum Beispiel Autos, Menschen und Fahrräder), braucht man eine Metrik, die alle Klassen berücksichtigt.
+Dafür nutzt man den Average Precision (AP). Er fasst die Precision über verschiedene Recall-Stufen hinweg zu einem einzigen Wert zusammen.
+Da man für jede Objektklasse einen AP berechnet, nimmt man anschließend den Durchschnitt über alle Klassen – das nennt man Mean Average Precision (mAP).
+Der mAP ist der wichtigste Gesamtwert für Object Detection.
+Ein hoher mAP bedeutet, dass die KI über alle Klassen hinweg zuverlässig und präzise arbeitet.
+<br>
+Jede Erkennung der KI hat auch einen sogenannten Confidence Score. Das ist der Wert, der angibt, wie sicher sich die KI ist, dass ein erkanntes Objekt tatsächlich existiert.
+Man kann einen Threshold (Grenzwert) festlegen, ab welchem Score eine Erkennung als „gültig“ gilt.
+Ein höherer Threshold sorgt für weniger Falschalarme (höhere Precision), ein niedriger Threshold dafür, dass weniger Objekte übersehen werden (höherer Recall).
+<br>
+Neben der Genauigkeit spielt auch die Geschwindigkeit des Modells eine Rolle.
+Diese wird in Frames per Second (FPS) gemessen und zeigt, wie viele Bilder pro Sekunde die KI verarbeiten kann.
+Das ist besonders wichtig bei Anwendungen, die in Echtzeit funktionieren müssen, zum Beispiel beim autonomen Fahren oder bei Videoüberwachung.
+
 ### Installierung der KI auf einem Raspberry Pi
 Siehe Link: https://roboflow.com/how-to-deploy/deploy-yolov8-to-the-raspberry-pi  <br>
 Die KI kann nun auf den Raspberry Pi herüberkopiert (z.B. im Dateiformat TensorFlow Lite) werden. Dazu muss nur der Raspberry Pi über SSH an den Computer verbunden sein. Dann kann die KI auf den Raspberry Pi herüberkopiert werden. Damit die Erkennung auch problemlos mit der Raspberry Pi Kamera funktioniert, müssen die Auflösung und das Bildformat an das Bildmaterial angepasst werden, das für das Training der KI verwendet wurde. Deshalb muss man die Bilder der Kamera nach Erhalt etwas anpassen, bevor man sie in die KI gibt. Ebenso darf z.B. nur alle halbe Sekunde ein Bild an die KI weitergegeben werden, sodass verhindert wird, dass der Raspberry Pi nicht überbeansprucht wird. 
