@@ -47,7 +47,7 @@ Um Unterstützung bei der Beschriftung des Datensatzes zu erhalten, verwende ich
 Danach lade ich den Datensatz von Roboflow herunter und kann diesen für das Training benutzen. Unter diesem <a href="https://kantonsschuleromanshorn-my.sharepoint.com/:f:/g/personal/jostoelz_ksr_ch/EmrC34QCeMNMh5nsG0g5v4YBju3Qs9Egffm7CIumSYiHmQ?e=mAljjI">Link</a> ist das finale Datenset aufrufbar. 
 ### Installierung eines YOLO-Models
 Das folgende <a href="https://www.youtube.com/watch?v=_WKS4E9SmkA">Video</a> zeigt, dass das YOLO11n Modell die beste Variante für Echtzeit Objekterkennung auf dem Raspberry Pi 5 ist (das dazu verwendete Datenset hat 750 Bildern und wurde im Format NCNN exportiert). <br>
-Inspiration für das Trainingsvorgehen entnehme ich von diesen Anleitungen: <a href="https://www.youtube.com/watch?v=LNwODJXcvt4">Video</a>, <a href="https://www.ultralytics.com/de/blog/training-custom-datasets-with-ultralytics-yolov8-in-google-colab">Blog</a>, <a href="https://www.youtube.com/watch?v=r0RspiLG260">Video</a>, <a href="https://colab.research.google.com/github/roboflow/notebooks/blob/main/notebooks/train-yolov8-object-detection-on-custom-dataset.ipynb">Google Colab</a>
+Inspiration für das Trainingsvorgehen entnehme ich von diesen Anleitungen: <a href="https://www.youtube.com/watch?v=LNwODJXcvt4">Video</a>, <a href="https://www.ultralytics.com/de/blog/training-custom-datasets-with-ultralytics-yolov8-in-google-colab">Blog</a>, <a href="https://www.youtube.com/watch?v=r0RspiLG260">Video</a>, <a href="https://colab.research.google.com/github/roboflow/notebooks/blob/main/notebooks/train-yolov8-object-detection-on-custom-dataset.ipynb">Google Colab</a>.
 
 ### Training des YOLO-Models mit eigenem Datenset
 #### Durchführung mit einem Test-Datensatz
