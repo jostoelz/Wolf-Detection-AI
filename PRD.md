@@ -50,7 +50,6 @@ Das folgende <a href="https://www.youtube.com/watch?v=_WKS4E9SmkA">Video</a> zei
 Siehe Links: https://www.youtube.com/watch?v=LNwODJXcvt4 <br>
 https://www.ultralytics.com/de/blog/training-custom-datasets-with-ultralytics-yolov8-in-google-colab <br>
 https://www.youtube.com/watch?v=r0RspiLG260 <br>
-https://colab.research.google.com/github/ultralytics/ultralytics/blob/main/examples/tutorial.ipynb#scrollTo=4JnkELT0cIJg
 https://colab.research.google.com/github/roboflow/notebooks/blob/main/notebooks/train-yolov8-object-detection-on-custom-dataset.ipynb
 ### Training des YOLO-Models mit eigenem Datenset
 #### Durchführung mit einem Test-Datensatz
@@ -108,8 +107,7 @@ Diese wird in Frames per Second (FPS) gemessen und zeigt, wie viele Bilder pro S
 Das ist besonders wichtig bei Anwendungen, die in Echtzeit funktionieren müssen, zum Beispiel beim autonomen Fahren oder bei Videoüberwachung.
 
 ### Installierung der KI auf einem Raspberry Pi
-Siehe Link: https://roboflow.com/how-to-deploy/deploy-yolov8-to-the-raspberry-pi  <br>
-Die KI kann nun auf den Raspberry Pi herüberkopiert (z.B. im Dateiformat TensorFlow Lite) werden. Dazu muss nur der Raspberry Pi über SSH an den Computer verbunden sein. Dann kann die KI auf den Raspberry Pi herüberkopiert werden. Damit die Erkennung auch problemlos mit der Raspberry Pi Kamera funktioniert, müssen die Auflösung und das Bildformat an das Bildmaterial angepasst werden, das für das Training der KI verwendet wurde. Deshalb muss man die Bilder der Kamera nach Erhalt etwas anpassen, bevor man sie in die KI gibt. Ebenso darf z.B. nur alle halbe Sekunde ein Bild an die KI weitergegeben werden, sodass verhindert wird, dass der Raspberry Pi nicht überbeansprucht wird. 
+Dieses <a href="https://roboflow.com/how-to-deploy/deploy-yolov8-to-the-raspberry-pi">Tutorial</a> zeigt, dass die KI nun auf den Raspberry Pi herüberkopiert werden kann (z.B. im Dateiformat TensorFlow Lite). Dazu muss nur der Raspberry Pi über SSH an den Computer verbunden sein. Dann kann die KI auf den Raspberry Pi herüberkopiert werden. Damit die Erkennung auch problemlos mit der Raspberry Pi Kamera funktioniert, müssen die Auflösung und das Bildformat an das Bildmaterial angepasst werden, das für das Training der KI verwendet wurde. Deshalb muss man die Bilder der Kamera nach Erhalt etwas anpassen, bevor man sie in die KI gibt. Ebenso darf z.B. nur alle halbe Sekunde ein Bild an die KI weitergegeben werden, sodass verhindert wird, dass der Raspberry Pi nicht überbeansprucht wird. 
 #### Finale Durchführung auf dem Raspberry Pi
 Ich folge der folgenden <a href="https://www.youtube.com/watch?v=z70ZrSZNi-8 ">Anleitung</a>, um ein YOLO-Modell auf dem Raspberry Pi laufen zu lassen. So kann die KI entweder über die Live-Kamera iterieren oder über ausgewählte Bilder. Die Bounding Boxes werden direkt auf das Kamerabild gezeichnet. 
 #### Voraussetzungen
