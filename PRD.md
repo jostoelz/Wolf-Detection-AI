@@ -109,8 +109,8 @@ Das ist besonders wichtig bei Anwendungen, die in Echtzeit funktionieren müssen
 Dieses <a href="https://roboflow.com/how-to-deploy/deploy-yolov8-to-the-raspberry-pi">Tutorial</a> zeigt, dass die KI nun auf den Raspberry Pi herüberkopiert werden kann (z.B. im Dateiformat TensorFlow Lite). Dazu muss nur der Raspberry Pi über SSH an den Computer verbunden sein. Dann kann die KI auf den Raspberry Pi herüberkopiert werden. Damit die Erkennung auch problemlos mit der Raspberry Pi Kamera funktioniert, müssen die Auflösung und das Bildformat an das Bildmaterial angepasst werden, das für das Training der KI verwendet wurde. Deshalb muss man die Bilder der Kamera nach Erhalt etwas anpassen, bevor man sie in die KI gibt. Ebenso darf z.B. nur alle halbe Sekunde ein Bild an die KI weitergegeben werden, sodass verhindert wird, dass der Raspberry Pi nicht überbeansprucht wird. 
 #### Finale Durchführung auf dem Raspberry Pi
 Ich folge der folgenden <a href="https://www.youtube.com/watch?v=z70ZrSZNi-8 ">Anleitung</a>, um ein YOLO-Modell auf dem Raspberry Pi laufen zu lassen. So kann die KI entweder über die Live-Kamera iterieren oder über ausgewählte Bilder. Die Bounding Boxes werden direkt auf das Kamerabild gezeichnet. 
-Version 1 der KI erreicht eine durchschnittliche Geschwindigkeit von 0.45 FPS und eine durchschnittliche Interferenzzeit von 2245.98 ms. 
-Die finale Version der KI erreicht eine durchschnittliche Geschwindigkeit von ... FPS und eine durchschnittliche Interferenzzeit von ... ms. 
+Version 1 der KI erreicht auf dem Raspberry Pi 5 eine durchschnittliche Geschwindigkeit von 0.45 FPS und eine durchschnittliche Interferenzzeit von 2245.98 ms. 
+Die finale Version der KI erreicht auf dem Raspberry Pi 5 eine durchschnittliche Geschwindigkeit von ... FPS und eine durchschnittliche Interferenzzeit von ... ms. 
 #### Voraussetzungen
 Um ein neuronales Netzwerk auf einem Raspberry Pi laufen lassen zu können, benötige ich einen Raspberry Pi AI Beschleuniger und einen Kühler. Ebenso muss der Raspberry Pi mit einer Kamera ausgestattet werden. 
 #### Installierung der Materialien auf einer Drohne
