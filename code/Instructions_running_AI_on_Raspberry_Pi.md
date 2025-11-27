@@ -7,7 +7,7 @@ source venv/bin/activate
 ``` 
 4) Lasse das Modell auf einen Ordner mit Bildern laufen:
 ``` 
-python yolo_detect.py --model=best.pt --source images
+python yolo_detect.py --model=Final/best.pt --source images
 ``` 
 6) Um die Geschwindigkeit des Modells zu messen, tippe:
 ```
