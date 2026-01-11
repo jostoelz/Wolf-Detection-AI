@@ -13,11 +13,13 @@ The neural network was developed by fine-tuning a YOLOv8s (small) model in Googl
 If you find this project useful for your research, please consider citing it:
 
 ```bibtex
-@software{Stoelzle2024,
-  author       = {St{\"o}lzle, Johannes},
-  title        = {Wolf Detection AI },
-  year         = 2025,
-  url          = {[https://github.com/jostoelz/Wolf-Detection-AI)}
+@thesis{Stoelzle2026Development,
+  author      = {St{\"o}lzle, Johannes},
+  title       = {Development of an Autonomous Drone System for Wolf Perception, Deterrence, and Livestock Protection},
+  institution = {Kantonsschule Romanshorn},
+  year        = {2026},
+  type        = {Matura Thesis},
+  url         = {https://github.com/jostoelz/Autonomous-Drone-System-for-Wolf-Detection-Deterrence-and-Sheep-Protection}
 }
 ```
 
