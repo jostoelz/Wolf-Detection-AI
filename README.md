@@ -3,6 +3,7 @@
 
 - This project was featured in the following thesis: <https://drive.google.com/drive/folders/1ag495ByeFjiVlfqUUsdaL6ZCu044Agzx>
 - GitHub Repository of the thesis: <https://github.com/jostoelz/Autonomous-Drone-System-for-Wolf-Detection-Deterrence-and-Sheep-Protection>
+- Presentation of Project: <https://drive.google.com/drive/folders/1pb8epSSIrult8X5_cMOFX3aK4fkG5Ags?usp=sharing>
 
 ## 🔍 Abstract
 The objective of this project was to develop an AI-driven system capable of distinguishing wolves from sheep and dogs to ensure that drone-based deterrence measures are applied exclusively to wolves. The data collection process involved acquiring drone footage from the Lange Erlen Zoo in Basel and the wildlife park in Feldkirch, complemented by recordings of sheep and dogs from various pastures. To manage the large volume of data, the one-shot model "Language Segment-Anything" was used to generate initial bounding boxes, which were then manually reviewed and corrected using Roboflow. The final dataset was enhanced through augmentation techniques such as cropping and mirroring, and integrated with existing online datasets to reach a total of 73,057 images.
