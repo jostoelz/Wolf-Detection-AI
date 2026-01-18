@@ -1,4 +1,4 @@
-# Anpassen der Klassen bei falscher Klassen-Annotierung
+# Adjusting classes in case of incorrect class annotation
 ```
 # code to adapt classes of labelled files
 
