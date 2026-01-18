@@ -10,7 +10,7 @@ from google.colab import drive
 # paths
 drive.mount('/content/drive')
 
-rf = Roboflow(api_key="QXXXsRtDxBQKaOoHIeU1")
+rf = Roboflow(api_key="[your_API_key]")
 workspace = rf.workspace("wolfdetectionai")
 
 workspace.deploy_model(
