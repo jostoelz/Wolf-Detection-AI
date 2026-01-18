@@ -1,4 +1,4 @@
-# Bilder annotieren in Google Colab
+# Annotating images in Google Colab
 ```
 # preparations
 !pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
