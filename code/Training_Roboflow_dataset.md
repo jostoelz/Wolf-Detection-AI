@@ -1,11 +1,11 @@
-# Training eines YOLO-Modells in Google Colab mit Datenset aus Roboflow
+# Training a YOLO model in Google Colab with a dataset from Roboflow
 
-Zuest habe ich ein neues Notebook in Google Colab erstellt. Es muss unter "Laufzeit", "Laufzeittyp" eine GPU ausgewählt werden. Dann habe ich den folgenden Code ausgeführt, um das YOLO-Modell von ultralytics zu importieren. 
+First, I created a new notebook in Google Colab. A GPU must be selected under ‘Runtime’, ‘Runtime type’. Then I ran the following code to import the YOLO model from ultralytics.
 ``` 
 !pip install ultralytics  
 from ultralytics import YOLO
 ```
-Anschliessend wurde das eigene Datenset von Roboflow importiert:
+Then, Roboflow's own data set was imported:
 ``` 
 !pip install roboflow
 
@@ -15,7 +15,7 @@ project = rf.workspace("wolfdetectionai").project("test-0kjud")
 version = project.version(1)
 dataset = version.download("yolov8")
 ```
-Danach war es möglich, das YOLO-Modell mit dem eigenen Datensatz zu trainieren:
+After that, it was possible to train the YOLO model with our own data set:
 ```
 import os
 
@@ -25,20 +25,20 @@ data_yaml_path = os.path.join(dataset_dir, "data.yaml")
 model = YOLO("yolov8n.pt")
 model.train(data=data_yaml_path, epochs=50, batch=16, imgsz=640)
 ```
-Mit dem nachfolgenden Code kann das trainierte Modell validiert werden:
+The trained model can be validated using the following code:
 ```
 model.val()
 ```
-Um ein externes Bild hereinzuladen, kann der folgende Code ausgeführt werden:
+To load an external image, the following code can be executed:
 ```
 from google.colab import files
 uploaded = files.upload()
 ```
-Nun kann das Modell auf dem importierten Bild laufen gelassen werden, um auch die Robustheit des Modells zu ermitteln:
+Now the model can be run on the imported image to determine the robustness of the model:
 ```
 model.predict("/content/{Name_Bild}.png", save=True, conf=0.5)
 ```
-Schlussendlich kann das Bild inkl. den Bounding Boxen heruntergeladen werden:
+Finally, the image including the bounding boxes can be downloaded:
 ```
 import os
 from google.colab import files
