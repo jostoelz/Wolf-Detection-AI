@@ -1,4 +1,4 @@
-# Quelle Code: https://www.youtube.com/watch?v=z70ZrSZNi-8 
+# Source of code: https://www.youtube.com/watch?v=z70ZrSZNi-8 
 
 import os
 import sys
