@@ -1,15 +1,16 @@
-# Anleitung, um eigene KI auf dem Raspberry Pi laufen zu lassen:
-1) Lade best.pt Datei in den yolo-Ordner
-2) Öffne yolo-Ordner im Terminal
-3) Öffne das virtual environment:
-``` 
+# Instructions for running your own AI on the Raspberry Pi:
+1) Load the best.pt file into the yolo folder
+2) Open the yolo folder in the terminal
+3) Open the virtual environment:
+```
 source venv/bin/activate
-``` 
-4) Lasse das Modell auf einen Ordner mit Bildern laufen:
-``` 
+```
+4) Run the model on a folder containing images:
+```
 python yolo_detect.py --model=Final/best.pt --source images
-``` 
-6) Um die Geschwindigkeit des Modells zu messen, tippe:
+```
+6) To measure the speed of the model, type:
 ```
 python3 speed_test.py
-``` 
+```
+ 
