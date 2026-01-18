@@ -1,6 +1,6 @@
-# Anleitung, um möglichst schnell eine Zip-Datei eines grossen Ordners zu erstellen
-1) Öffne das Terminal an jener Stelle, an der der Ordner abgelegt ist
-2) Um den Prozess zu starten, tippe:
+# Instructions for creating a zip file of a large folder as quickly as possible
+1) Open the terminal at the location where the folder is stored
+2) To start the process, type:
 ``` 
 "C:\Program Files\7-Zip\7z.exe" a -tzip Dataset.zip Dataset/
 ``` 
