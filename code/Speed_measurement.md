@@ -1,4 +1,4 @@
-# Code, um die Geschwindigkeit der KI auf dem Raspberry Pi zu messen
+# Code to measure the speed of the AI on the Raspberry Pi
 ```
 import time
 import numpy as np
