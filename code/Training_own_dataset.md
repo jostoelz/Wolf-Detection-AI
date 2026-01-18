@@ -1,4 +1,4 @@
-# Training eines YOLO-Modells in Google Colab mit eigenem Datenset
+# Training a YOLO model in Google Colab with your own dataset
 ``` 
 !pip install ultralytics
 from ultralytics import YOLO
