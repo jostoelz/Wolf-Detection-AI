@@ -10,7 +10,7 @@ Then, Roboflow's own data set was imported:
 !pip install roboflow
 
 from roboflow import Roboflow
-rf = Roboflow(api_key="QXXXsRtDxBQKaOoHIeU1")
+rf = Roboflow(api_key="[your_API_key")
 project = rf.workspace("wolfdetectionai").project("test-0kjud")
 version = project.version(1)
 dataset = version.download("yolov8")
